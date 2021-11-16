@@ -1,5 +1,8 @@
 # p1-DataPirates
 ### Team Info
+- [Billy/Raq Journal](https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit)
+- [Sam/Dylan Journal](https://docs.google.com/document/d/1tSdTbmLj6imljpYDC7OJZhwsZqx2VFLlgDK_WOr7RJA/edit)
+
 People | Total Grade | Commits |
 -------------  | -------------- | -------------- |
 Billy  | [Github profile](https://github.com/BillyCherres) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres)| 
