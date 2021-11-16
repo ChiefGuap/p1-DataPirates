@@ -4,8 +4,8 @@ People | Total Grade | Commits |
 -------------  | -------------- | -------------- |
 Billy  | [Github profile](https://github.com/BillyCherres) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres)| 
 Raq   | [Github profile](https://github.com/ChiefGuap) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=ChiefGuap)| 
-Kian   |[Github profile](https://github.com/samkoenig9) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)| 
-Abhijay   | [Github profile](https://github.com/dylanroman) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman)| 
+Sam  |[Github profile](https://github.com/samkoenig9) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)| 
+Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman)| 
 
 # Website Purpose
 
