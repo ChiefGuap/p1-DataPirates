@@ -1,6 +1,6 @@
 # p1-DataPirates
 ### Team Info
-People | Total Grade | Video |
+People | Total Grade | Commits |
 -------------  | -------------- | -------------- |
 Billy  | [Github profile](https://github.com/BillyCherres) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres)| 
 Raq   | [Github profile](https://github.com/ChiefGuap) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=ChiefGuap)| 
