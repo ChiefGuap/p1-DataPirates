@@ -1,4 +1,5 @@
 # p1-DataPirates
+![About Us Page]()
 Links:
 - [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1)
 - [Wiki Page](https://github.com/ChiefGuap/p1-DataPirates/wiki)
