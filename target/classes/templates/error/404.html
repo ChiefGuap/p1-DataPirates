@@ -5,21 +5,22 @@
 <head><div layout:fragment="metadata" th:remove="tag">
     <!-- Start of head content specific to page -->
     <title>404 error</title>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet" />
     <!-- End of head content specific to page -->
 </div></head>
 
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
-<body><div layout:fragment="content" th:remove="tag">
+<body class="errorbg"><div layout:fragment="content" th:remove="tag">
     <div class="index">
         <div class="center-block" style="margin: 2% 10% 10%; font-family: gilroy,serif;">
             <div class="col-12" style="text-align: center;">
-                <h1><strong>A 404 error occurred</strong></h1>
+                <h1 style="font-family: 'Lato', sans-serif;"><strong>404 Error</strong></h1>
             </div>
 
-            <div class="jumbotron jumbotron-fluid" style="text-align: center; ">
-                <h2>Engineering is on the case!</h2>
+            <center><div class="errorbox" style="text-align: center; ">
+                <h2>Seems like you've gotten lost in the seas...</h2>
                 <a href="/">Go Home</a>
-            </div>
+            </div></center>
 
         </div>
     </div>
