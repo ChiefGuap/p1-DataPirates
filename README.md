@@ -1,6 +1,6 @@
-# p1-DataPirates
-
-# Website Purpose
+# p1-DataPirates 
+# Movie Talk
+### Website Purpose
 After making an account on the website, the user will be able to post which movies they have watched and either really enjoyed or disliked alot. Users will also be able to make comments on movies for the public to see. 
 
 ![About Us Page](https://github.com/ChiefGuap/p1-DataPirates/blob/master/src/main/resources/static/images/about%20us%20Pagelol.png)
