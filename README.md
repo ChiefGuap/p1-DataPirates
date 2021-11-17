@@ -1,4 +1,8 @@
 # p1-DataPirates
+
+# Website Purpose
+After making an account on the website, the user will be able to post which movies they have watched and either really enjoyed or disliked alot. Users will also be able to make comments on movies for the public to see. 
+
 ![About Us Page](https://github.com/ChiefGuap/p1-DataPirates/blob/master/src/main/resources/static/images/about%20us%20Pagelol.png)
 Links:
 - [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1)
@@ -14,7 +18,7 @@ Raq   | [Github profile](https://github.com/ChiefGuap) |[Commits](https://github
 Sam  |[Github profile](https://github.com/samkoenig9) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)| 
 Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman)| 
 
-# Website Purpose
+
 
 # Team/Individual Plans:
 - Each pair (Billy/Raq and Sam/Dylan) will switch off between front end and back end every week. This is ideal. Of course there will be weeks where both pairs overlap. Everyone is given assignments on the [scrum board](https://github.com/ChiefGuap/p1-DataPirates/projects/1) every week and the goal is to finish these assignments.
