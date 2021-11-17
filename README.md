@@ -1,6 +1,7 @@
 # p1-DataPirates
 Links:
 - [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1)
+- [Wiki Page](https://github.com/ChiefGuap/p1-DataPirates/wiki)
 ### Team Info
 - [Billy/Raq Journal](https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit)
 - [Sam/Dylan Journal](https://docs.google.com/document/d/1tSdTbmLj6imljpYDC7OJZhwsZqx2VFLlgDK_WOr7RJA/edit)
