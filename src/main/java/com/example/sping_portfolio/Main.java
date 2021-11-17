@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
-        System.out.println("Done!");
+        System.out.println("This is the GOAT Group");
     }
 
 }
