@@ -1,4 +1,5 @@
 # p1-DataPirates
+![About Us Page](https://github.com/ChiefGuap/p1-DataPirates/blob/master/src/main/resources/static/images/about%20us%20Pagelol.png)
 Links:
 - [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1)
 - [Wiki Page](https://github.com/ChiefGuap/p1-DataPirates/wiki)
