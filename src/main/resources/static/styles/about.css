@@ -8,7 +8,7 @@
     background-size: cover;
 }
 
-  .about-header {
+.about-header {
   text-align: center;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
@@ -16,8 +16,8 @@
   color:white;
   font-size:100px;
   position: relative;
-  top:50px;
-  text-shadow: 2px 2px 5px #202020;
+  padding-top: 100px;
+  text-shadow: 2px 2px 5px #585858;
 }
 
 .about-body {
@@ -33,7 +33,6 @@
 }
 
 .row {
-  top: 10px;
   display: flex;
   position: relative;
   width: auto;
@@ -42,7 +41,8 @@
 .column {
   flex: 10%;
   padding: 50px;
-  margin: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
   width: 20px;
   color: black;
   height: auto;
@@ -51,11 +51,12 @@
   margin-top: 100px;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
+  border: 2px solid rgba(39, 152, 167, 0.253);
 }
 
 .face {
   border-radius: 50%;
-  box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+  box-shadow: 2px 2px 5px rgba(0,0,0,.5);
   width: 100%;
   height: auto;
 }
