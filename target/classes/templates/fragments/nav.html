@@ -13,37 +13,49 @@
     <!-- Begin navigation fragments -->
     <nav class="pnav navbar navbar-expand" th:fragment="header">
         <a href="/">
-            <img src="/static/images/ncs_logo.png" th:src="@{/images/ncs_logo.png}" width="50" height="50" class="d-inline-block align-center" alt="">
+            <img src="/static/images/ncs_logo.png" th:src="@{/images/ncs_logo.png}" width="50" height="50" class="nav-icon" alt="">
         </a>
         <!-- Bootstrap menus -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <!--root menu -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">P1-DataPirates <span class="sr-only">(current)</span></a>
+                    <a class="navtext nav-link" href="/">P1-DataPirates <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/about">About Us <span class="sr-only">(current)</span></a>
+                    <a class="navtext nav-link" href="/about">About Us <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarPBL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PBL
+                    <a class="navtext nav-link dropdown-toggle" href="#" id="navbarPBL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Individual
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/greet">Greet</a>
-                        <a class="dropdown-item" href="/birds">Birds</a>
-                        <a class="dropdown-item" href="/dne">404 error</a>
+                    <div class="pnav-drop dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="pnav-drop-item dropdown-item" href="#">Raq</a>
+                        <a class="pnav-drop-item dropdown-item" href="#">Billy</a>
+                        <a class="pnav-drop-item dropdown-item" href="#">Dylan</a>
+                        <a class="pnav-drop-item dropdown-item" href="#">Sam</a>
+                        <a class="pnav-drop-item dropdown-item" href="#">Devam</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarTPT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="navtext nav-link dropdown-toggle" href="#" id="navbarPBL" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PBL
+                    </a>
+                    <div class="pnav-drop dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="pnav-drop-item dropdown-item" href="/greet">Greet</a>
+                        <a class="pnav-drop-item dropdown-item" href="/birds">Birds</a>
+                        <a class="pnav-drop-item dropdown-item" href="/dne">404 error</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="navtext nav-link dropdown-toggle" href="#" id="navbarTPT" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         TPT
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" th:href="@{/sanvipal_javaref.pdf}" target="_blank" rel="noopener noreferrer">Journal</a>
-                        <a class="dropdown-item" href="https://freekashmir.nighthawkcodingsociety.com/" target="_blank" rel="noopener noreferrer">AP units</a>
-                        <a class="dropdown-item" href="https://drone.nighthawkcodingsociety.com/ap-lessons/interface-abstraction-FRQ" target="_blank" rel="noopener noreferrer">2006 FRQ</a>
-                        <a class="dropdown-item" href="https://drone.nighthawkcodingsociety.com/ap-lessons/interface-abstraction-FRQ" target="_blank" rel="noopener noreferrer">2019 FRQ</a>
+                    <div class="pnav-drop dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="pnav-drop-item dropdown-item" th:href="@{/sanvipal_javaref.pdf}" target="_blank" rel="noopener noreferrer">Journal</a>
+                        <a class="pnav-drop-item dropdown-item" href="https://freekashmir.nighthawkcodingsociety.com/" target="_blank" rel="noopener noreferrer">AP units</a>
+                        <a class="pnav-drop-item dropdown-item" href="https://drone.nighthawkcodingsociety.com/ap-lessons/interface-abstraction-FRQ" target="_blank" rel="noopener noreferrer">2006 FRQ</a>
+                        <a class="pnav-drop-item dropdown-item" href="https://drone.nighthawkcodingsociety.com/ap-lessons/interface-abstraction-FRQ" target="_blank" rel="noopener noreferrer">2019 FRQ</a>
                     </div>
                 </li>
             </ul>
