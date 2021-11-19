@@ -4,9 +4,14 @@
 After making an account on the website, the user will be able to post which movies they have watched and either really enjoyed or disliked alot. Users will also be able to make comments on movies for the public to see. 
 
 ![About Us Page](https://github.com/ChiefGuap/p1-DataPirates/blob/master/src/main/resources/static/images/about%20us%20Pagelol.png)
-Links:
-- [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1)
-- [Wiki Page](https://github.com/ChiefGuap/p1-DataPirates/wiki)
+<details>
+<summary>Links: </summary>
+<ul>
+<li>[Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1)</li>
+<li>[Wiki Page](https://github.com/ChiefGuap/p1-DataPirates/wiki)</li>
+</details>
+
+
 ### Team Info
 - [Billy/Raq Journal](https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit)
 - [Sam/Dylan Journal](https://docs.google.com/document/d/1tSdTbmLj6imljpYDC7OJZhwsZqx2VFLlgDK_WOr7RJA/edit)
