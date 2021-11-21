@@ -7,8 +7,8 @@
 <details>
 <summary>Links: </summary>
 <ul>
-<li>[Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1)</li>
-<li>[Wiki Page](https://github.com/ChiefGuap/p1-DataPirates/wiki)</li>
+<li>[Scrum Board(https://github.com/ChiefGuap/p1-DataPirates/projects/1)</li>
+<li>[Wiki Page(https://github.com/ChiefGuap/p1-DataPirates/wiki)</li>
 </details>
 
 
