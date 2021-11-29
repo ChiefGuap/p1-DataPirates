@@ -17,7 +17,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="p1-DataPirates" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -126,5 +128,6 @@
     <orderEntry type="library" name="Maven: org.glassfish.jaxb:txw2:2.3.3" level="project" />
     <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:3.0.11" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.16" level="project" />
   </component>
 </module>
