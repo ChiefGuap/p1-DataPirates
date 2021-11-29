@@ -3,6 +3,10 @@
 ## Website Purpose
 ### After making an account on the website, the user will be able to post which movies they have watched and either really enjoyed or disliked alot. Users will also be able to make comments on movies for the public to see. 
 
+## Project Goals
+Making an anime rating website, somewhat like Crunchyrolls "Rate my Anime" Page.
+Use Database to store all the animes that we have (If we find an api, then it will be better).
+
 ![About Us Page](https://github.com/ChiefGuap/p1-DataPirates/blob/master/src/main/resources/static/images/lololol.png)
 <details>
 <summary>Links: </summary>
