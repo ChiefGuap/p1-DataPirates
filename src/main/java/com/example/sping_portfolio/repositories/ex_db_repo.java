@@ -1,11 +1,9 @@
 package com.example.sping_portfolio.repositories;
 
-import org.springframework.stereotype.Service;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import javax.transaction.Transactional;
+public class ex_db_repo extends JpaRepository {
 
-@Transactional
-@Service
-public class ex_db_repo {
+    List<>
 
 }
