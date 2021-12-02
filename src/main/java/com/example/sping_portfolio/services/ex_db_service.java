@@ -26,9 +26,9 @@ public class ex_db_service {
     }
 
     //query based on search, defined in repository
-    public List<ex_db_entity>listLike(String term) {
-        return jpa.findBytestStringContainingIgnoreCase(term);
-    }
+    //public List<ex_db_entity>listLike(String term) {
+        //return jpa.findBytestStringContainingIgnoreCase(term);
+    //}
 
     //commit to db
     public void commit(ex_db_entity entry) {
