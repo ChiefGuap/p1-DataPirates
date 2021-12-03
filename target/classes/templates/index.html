@@ -7,50 +7,55 @@
 <head><div layout:fragment="metadata" th:remove="tag">
     <title>Home</title>
     <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+    <link th:href="@{/styles/home.css}" rel="stylesheet" />
 </div></head>
 
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
 <body><div layout:fragment="content" th:remove="tag">
     <!-- Start of body content specific to page -->
     <div id="spring_intro" class="articles" style="padding-top: 40px;">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
+        <div class="wrapper">
+            <h2><strong>All Movies<span>( 4 )</span></strong></h2>
+            <div class="cards">
+                <figure class="card">
+                    <img th:src="@{/images/spidey.jpeg}" />
+                    <figcaption>Spider-Man: No Way Home</figcaption>
+                </figure>
+                <figure class="card">
+                    <img th:src="@{/images/venom.jpeg}"/>
+                    <figcaption>Venom: Let There Be Carnage</figcaption>
+                </figure>
+                <figure class="card">
+                    <img th:src="@{/images/datapirate.jpeg}" />
+                    <figcaption>Movie 3</figcaption>
+                </figure>
+                <figure class="card">
+                    <img th:src="@{/images/datapirate.jpeg}" />
+                    <figcaption>Movie 4</figcaption>
+                </figure>
             </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a short card.</p>
-                </div>
-              </div>
+            <h2><strong>What's new?</strong></h2>
+            <div class="news">
+                <figure class="article">
+                    <img th:src="@{/images/datapirate.jpeg}" />
+                    <figcaption>
+                        <h3>New Item</h3>
+                        <p>
+                            In today’s update, two heads are better than one, and three heads are better than that, as the all-new Flockheart’s Gamble Arcana item for Ogre Magi makes its grand debut.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="article">
+                    <img th:src="@{/images/datapirate.jpeg}" />
+                    <figcaption>
+                        <h3>Update</h3>
+                        <p>
+                            Just in time for Lunar New Year and the Rat’s time in the cyclical place of honor, the Treasure of Unbound Majesty is now available.
+                        </p>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
     </div>
     <!-- End of body content specific to page -->
 </div></body>
