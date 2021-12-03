@@ -6,7 +6,7 @@
 ## Project Goals
 This project's main purpose is to have the user be able to rate movies and leave comments on the newest and lastest movies that are being realsed. We will also be adding some key features such as ranking your favorite movies, staring favorite movies and even make it that your favorite movie will be the background of your page. The user will have thier own login page, and will have a chance to friend others and create connections and leave comments on movies, seeing what other people put. Overall, this is somewhat like twitter in that it resembles each movie as a post and people reviewing and commenting on it (leaving thier own opnion's on it). 
 
-![About Us Page](https://github.com/ChiefGuap/p1-DataPirates/blob/master/src/main/resources/static/images/lololol.png)
+![About Us Page](https://github.com/ChiefGuap/p1-DataPirates/blob/master/src/main/resources/static/images/movietalk.png)
 <details>
 <summary>Links: </summary>
 <ul>
