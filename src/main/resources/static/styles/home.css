@@ -1,5 +1,7 @@
 body {
-    background-color: rgb(61, 61, 61);
+    /* background-color: rgb(61, 61, 61); */
+    /* background: linear-gradient(45deg, rgba(49,173,221,1) 0%, rgb(49, 49, 49) 95%); */
+    background: linear-gradient(45deg, rgb(49, 49, 49) 0%, rgba(49,173,221,1) 95%);
 }
 
 .abs,
@@ -73,14 +75,15 @@ h2 span {
 h2 {
   padding: 10px;
   padding-left: 25px;
-  color: #ccc;
+  color: rgb(255, 255, 255);
   margin: 0;
 }
 
 h2 strong {
   z-index: 2;
-  background: #24282f;
-  padding: 4px 8px;
+  /* background-color: rgb(35, 56, 66); */
+  padding: 8px;
+  border-radius: 5px;
 }
 
 h2 span {
@@ -92,12 +95,14 @@ h2 span {
 h2:after {
   content: '';
   z-index: 1;
-  bottom: 50%;
-  margin-bottom: -2px;
-  height: 2px;
+  bottom: 0%;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  height: 3px;
+  width: 90%;
   left: 0;
   right: 0;
-  background: #373d47;
+  background-color: rgb(255, 255, 255);
 }
 
 .cards,
