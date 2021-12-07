@@ -1,7 +1,6 @@
 body {
-    /* background-color: rgb(61, 61, 61); */
-    /* background: linear-gradient(45deg, rgba(49,173,221,1) 0%, rgb(49, 49, 49) 95%); */
-    background: linear-gradient(45deg, rgb(49, 49, 49) 0%, rgba(49,173,221,1) 95%);
+    background-color: rgb(37, 37, 37);
+    /* background: linear-gradient(45deg, rgb(49, 49, 49) 0%, rgba(49,173,221,1) 95%); */
 }
 
 .abs,
@@ -74,7 +73,7 @@ h2 span {
 
 h2 {
   padding: 10px;
-  padding-left: 25px;
+  padding-left: 15px;
   color: rgb(255, 255, 255);
   margin: 0;
 }
@@ -97,7 +96,7 @@ h2:after {
   z-index: 1;
   bottom: 0%;
   margin-bottom: 5px;
-  margin-left: 30px;
+  margin-left: 20px;
   height: 3px;
   width: 90%;
   left: 0;
@@ -197,7 +196,7 @@ h2:after {
   margin: 20px;
 }
 
-.news .article img {
+.news .article .card-img {
   width: 100%;
   min-height: 100%;
   transition: 0.2s;
@@ -238,4 +237,64 @@ h2:after {
 .news .article:active figcaption {
   opacity: 1;
   transform: none;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-track-color: green;
+}
+
+.card {
+  flex: 0 0 auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(29, 29, 29, 0.61);
+  border-radius: 1000px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(156, 156, 156); 
+  border-radius: 1000px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.homelogo {
+  width: 500px;
+  position: absolute;
+  top: 25%;
+  left: 32%;
+}
+
+.frontcover {
+  position: relative;
+  top: 200%;
+  left: 0;
+}
+.postersbg {
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-image: url("../images/postersblur.jpg");
 }

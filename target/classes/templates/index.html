@@ -14,30 +14,54 @@
 <body><div layout:fragment="content" th:remove="tag">
     <!-- Start of body content specific to page -->
     <div id="spring_intro" class="articles" style="padding-top: 40px;">
+        <div class="frontcover">
+            <div class="postersbg"></div>
+            <img th:src="@{/images/movietalk.svg}" class="homelogo" style="text-align: center;"/>
+        </div>
         <div class="wrapper">
-            <h2><strong>ALL MOVIES</strong></h2>
+            <h2 id="movies"><strong>All Movies</strong></h2>
             <div class="cards">
                 <figure class="card">
-                    <img th:src="@{/images/spidey.jpeg}" />
+                    <img th:src="@{/images/spidey.jpeg}" class="card-img"/>
                     <figcaption>Spider-Man: No Way Home</figcaption>
                 </figure>
                 <figure class="card">
-                    <img th:src="@{/images/venom.jpeg}"/>
+                    <img th:src="@{/images/venom.jpeg}" class="card-img"/>
                     <figcaption>Venom: Let There Be Carnage</figcaption>
                 </figure>
                 <figure class="card">
-                    <img th:src="@{/images/shangchi.jpg}" />
+                    <img th:src="@{/images/shangchi.jpg}" class="card-img"/>
                     <figcaption>Shang-Chi and the Legend of the Ten Rings</figcaption>
                 </figure>
                 <figure class="card">
-                    <img th:src="@{/images/datapirate.jpeg}" />
+                    <img th:src="@{/images/datapirate.jpeg}" class="card-img"/>
+                    <figcaption>Movie 4</figcaption>
+                </figure>
+                <figure class="card">
+                    <img th:src="@{/images/datapirate.jpeg}" class="card-img"/>
+                    <figcaption>Movie 4</figcaption>
+                </figure>
+                <figure class="card">
+                    <img th:src="@{/images/datapirate.jpeg}" class="card-img"/>
+                    <figcaption>Movie 4</figcaption>
+                </figure>
+                <figure class="card">
+                    <img th:src="@{/images/datapirate.jpeg}" class="card-img"/>
+                    <figcaption>Movie 4</figcaption>
+                </figure>
+                <figure class="card">
+                    <img th:src="@{/images/datapirate.jpeg}" class="card-img"/>
+                    <figcaption>Movie 4</figcaption>
+                </figure>
+                <figure class="card">
+                    <img th:src="@{/images/datapirate.jpeg}" class="card-img"/>
                     <figcaption>Movie 4</figcaption>
                 </figure>
             </div>
             <h2><strong>What's new?</strong></h2>
             <div class="news">
                 <figure class="article">
-                    <img th:src="@{/images/best-movies-1624472751.jpg}" />
+                    <img th:src="@{/images/best-movies-1624472751.jpg}" class="card-img"/>
                     <figcaption>
                         <h3>MovieTalk</h3>
                         <p>
@@ -46,7 +70,7 @@
                     </figcaption>
                 </figure>
                 <figure class="article">
-                    <img th:src="@{/images/datapirate.jpeg}" />
+                    <img th:src="@{/images/datapirate.jpeg}" class="card-img"/>
                     <figcaption>
                         <h3>Update</h3>
                         <p>
