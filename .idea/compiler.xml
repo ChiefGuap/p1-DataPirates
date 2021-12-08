@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="p1-DataPirates" target="11" />
+      <module name="p1-DataPirates" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
