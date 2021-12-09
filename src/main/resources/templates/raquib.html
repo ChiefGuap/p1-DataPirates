@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+<head><div layout:fragment="metadata" th:remove="tag">
     <meta charset="UTF-8">
     <title>Raq Daddy</title>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+    <link th:href="@{/styles/raq.css}" rel="stylesheet" />
+</div>
 </head>
-<body>
+<body><div layout:fragment="content" th:remove="tag">
 <div class="animation01">
     <div class="rhombus_small">
         <div class="rhombus">
@@ -48,6 +52,7 @@
         <span class="name_circle01"></span>
         <span class="name_circle02"></span>
     </div>
+</div>
 </div>
 </body>
 </html>

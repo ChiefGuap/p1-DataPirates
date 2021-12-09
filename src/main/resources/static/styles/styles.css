@@ -50,8 +50,7 @@ body {
 }
 
 .pnav:hover .nav-icon {
-    transform: scale(1.2);
-    margin-right: 10px;
+    transform: scale(1.1) translateX(-5px);
 }
 
 .pnav:hover {
