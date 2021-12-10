@@ -15,6 +15,17 @@ This project's main purpose is to have the user be able to rate movies and leave
 </details>
 
 
+  ## Project Details (Pop Quiz)
+
+m221_Penguins   | [Scrum Board](https://github.com/yajatyadav/spring_portfolio/projects/1) | [Repo Contributors](https://github.com/yajatyadav/spring_portfolio/graphs/contributors) | ------ | ------ | ------ |
+------ | ------ | ------ | ------ | ------ | ------ |
+Name            | GitHub ID | Tasks | Scrum Board | Commits | Profile |
+Raquib Alam | kylem314 | [Issues](https://github.com/devamshri/AllHailTheHolyScrumMaster/issues?q=is%3Aissue+assignee%3Akylem314+) | [Scrum Board](https://github.com/yajatyadav/spring_portfolio/projects/1?card_filter_query=assignee%3Akylem314) | [Issues](https://github.com/yajatyadav/spring_portfolio/issues/assigned/kylem314) -- [Commit Page](https://github.com/yajatyadav/spring_portfolio/commits?author=kylem314)| [Profile](https://github.com/kylem314) |
+Devam Shrivastava | devamshri | [Issues](https://github.com/devamshri/AllHailTheHolyScrumMaster/issues?q=is%3Aissue+assignee%3Adevamshri+) | [Scrum Board](https://github.com/yajatyadav/spring_portfolio/projects/1?card_filter_query=assignee%3Adevamshri) | [Issues](https://github.com/yajatyadav/spring_portfolio/issues/assigned/devamshri) -- [Commit Page](https://github.com/yajatyadav/spring_portfolio/commits?author=devamshri) | [Profile](https://github.com/devamshri) |
+William Cherres | yajatyadav | [Issues](https://github.com/devamshri/AllHailTheHolyScrumMaster/issues?q=is%3Aissue+assignee%3Ayajatyadav+) | [Scrum Board](https://github.com/yajatyadav/spring_portfolio/projects/1?card_filter_query=assignee%3Ayajatyadav) | [Issues](https://github.com/yajatyadav/spring_portfolio/issues/assigned/yajatyadav) -- [Commit Page](https://github.com/yajatyadav/spring_portfolio/commits?author=yajatyadav) | [Profile](https://github.com/yajatyadav) | 
+Dylan Roman | florayuan18 | [Issues](https://github.com/devamshri/AllHailTheHolyScrumMaster/issues?q=is%3Aissue+assignee%3Aflorayuan18+) | [Scrum Board](https://github.com/yajatyadav/spring_portfolio/projects/1?card_filter_query=assignee%3Aflorayuan18) | [Issues](https://github.com/yajatyadav/spring_portfolio/issues/assigned/florayuan18) -- [Commit Page](https://github.com/yajatyadav/spring_portfolio/commits?author=florayuan18) | [Profile](https://github.com/florayuan18) |
+Sam Koenig | wiz124 | [Issues](https://github.com/devamshri/AllHailTheHolyScrumMaster/issues?q=is%3Aissue+assignee%3Awiz124+) | [Scrum Board](https://github.com/yajatyadav/spring_portfolio/projects/1?card_filter_query=assignee%3Awiz124) | [Issues](https://github.com/yajatyadav/spring_portfolio/issues/assigned/wiz124) -- [Commit Page](https://github.com/yajatyadav/spring_portfolio/commits?author=wiz124) | [Profile](https://github.com/wiz124) |
+  
 ### Team Info
 - [Billy/Raq Journal](https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit)
 - [Sam/Dylan/Devam Journal](https://docs.google.com/document/d/1tSdTbmLj6imljpYDC7OJZhwsZqx2VFLlgDK_WOr7RJA/edit)
