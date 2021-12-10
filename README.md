@@ -15,9 +15,9 @@ This project's main purpose is to have the user be able to rate movies and leave
 </details>
 
 
-  ## Project Details (Pop Quiz)
+  ## Home week 2
 
-m221_Penguins   | [Scrum Board](https://github.com/yajatyadav/spring_portfolio/projects/1) | [Repo Contributors](https://github.com/yajatyadav/spring_portfolio/graphs/contributors) | ------ | ------ | ------ |
+P-1 Data Pirates   | [Scrum Board](https://github.com/yajatyadav/spring_portfolio/projects/1) | [Repo Contributors](https://github.com/yajatyadav/spring_portfolio/graphs/contributors) | ------ | ------ | ------ |
 ------ | ------ | ------ | ------ | ------ | ------ |
 Name            | GitHub ID | Tasks | Scrum Board | Commits | Profile |
 Raquib Alam | ChiefGuap | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues?q=is%3Aissue+assignee%3AChiefGuap+) | [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1?card_filter_query=assignee%3AChiefGuap) | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues/assigned/ChiefGuap) -- [Commit Page](https://github.com/ChiefGuap/p1-DataPirates/commits?author=ChiefGuap)| [Profile](https://github.com/ChiefGuap) |
