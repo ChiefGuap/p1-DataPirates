@@ -1,170 +1,72 @@
-<!DOCTYPE HTML>
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{layout}" lang="en">
-
 <head><div layout:fragment="metadata" th:remove="tag">
-    <!-- Start of head content specific to page -->
-    <title>About Devam Shrivastava</title>
+    <meta charset="UTF-8">
+    <title>Raq Daddy</title>
     <link th:href="@{/styles/styles.css}" rel="stylesheet" />
-    <!-- End of head content specific to page -->
-</div></head>
+    <link th:href="@{/styles/devam.css}" rel="stylesheet" />
+    <script src="/styles/raquib.js"></script>
+</div>
 
-<body><div layout:fragment="content" th:remove="tag" background="../static/images/DevamIsSoCool.jfif">
-    <!-- Start of body content specific to page -->
-    <p> Hello, this is Devam's About Page. A fun fact about me is that my birthday is the day before the GOAT Yagoot!</p>
-    <img src="/static/images/DevamIsSoCool.jfif" th:src="@{/images/DevamIsSoCool.jfif}" alt="lol me"><br>
-    <div class="contact" style="height: 35vh;">
-        <div class="row justify-content-left" style="margin: 2%;">
-            <form action="/devamabout" method="GET" id="devamaboutForm">
-                <div>
-                    <label for="FavNumber">What is your favorite number?</label>
-                    <input name="name" id="FavNumber">
-                    <button>Submit</button>
-                    <p th:text="'Hello, Your Favorite Number is ' + ${name} + '!'"></p>
+</head>
+<body><div layout:fragment="content" th:remove="tag">
+    <div class="animation01">
+        <div class="rhombus_small">
+            <div class="rhombus">
+                <div class="border_box">
+                    <span class="line line01"></span>
+                    <span class="line line02"></span>
+                    <span class="line line03"></span>
+                    <span class="line line04"></span>
+                    <span class="circle circle01"></span>
+                    <span class="circle circle02"></span>
+                    <span class="circle circle03"></span>
+                    <span class="circle circle04"></span>
+                    <span class="animation_line animation_line01"></span>
+                    <span class="animation_line_wrapper animation_line02_wrapper"><span class="animation_line animation_line02"></span></span>
+                    <span class="animation_line animation_line03"></span>
+                    <span class="animation_line_wrapper animation_line04_wrapper"><span class="animation_line animation_line04"></span></span>
+                    <span class="animation_line animation_line05"></span>
+                    <span class="animation_line_wrapper animation_line06_wrapper"><span class="animation_line animation_line06"></span></span>
+                    <span class="animation_line animation_line07"></span>
+                    <span class="animation_line_wrapper animation_line08_wrapper"><span class="animation_line animation_line08"></span></span>
                 </div>
-            </form>
+                <div class="wave">
+                    <div class="wave_wrapper"><div class="wave_box"></div></div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- End of body content specific to page -->
-</div></body>
+    <div class="animation02">
+        <div class="rhombus_box">
+            <span class="rhombus_item_wrapper rhombus_item01_wrapper"><span class="rhombus_item"></span></span>
+            <span class="rhombus_item_wrapper rhombus_item02_wrapper"><span class="rhombus_item"></span></span>
+        </div>
+        <div class="double_content">
+            <div class="double_wrapper02 dotted02"><div class="dotted_hide"><div class="double_wrapper01 dotted01"><span class="dotted_right"></span></div></div></div>
+            <div class="double_wrapper02 white02"><div class="double_wrapper01 white01"></div></div>
+            <div class="double_wrapper02 gray02"><div class="double_wrapper01 gray01"></div></div>
+            <div class="double_wrapper02 orange02"><div class="double_wrapper01 orange01"></div></div>
+        </div>
+        <div class="name">
+            <p>Devam Shrivastava</p>
+            <span class="name_circle01"></span>
+            <span class="name_circle02"></span>
+        </div>
+    </div>
+</div>
+<article class="kontext">
+    <div class="layer one show">
+    </div>
+    <div class="layer two">
+        <h2>Layer Two</h2>
+    </div>
+    <div class="layer three">
+        <h2>Layer Three</h2>
+    </div>
+</article>
 
+<ul class="bullets"></ul>
+</body>
 </html>
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
-    html,body{
-        display: grid;
-        height: 100%;
-        place-items: center;
-        text-align: center;
-        background: #DEB887;
-    }
-    .container{
-        position: relative;
-        width: 400px;
-        background: #DEB887;
-        padding: 20px 30px;
-        border: 1px solid #444;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .container .post{
-        display: none;
-    }
-    .container .text{
-        font-size: 25px;
-        color: #666;
-        font-weight: 500;
-    }
-    .container .edit{
-        position: absolute;
-        right: 10px;
-        top: 5px;
-        font-size: 16px;
-        color: #666;
-        font-weight: 500;
-        cursor: pointer;
-    }
-    .container .edit:hover{
-        text-decoration: underline;
-    }
-    .container .star-widget input{
-        display: none;
-    }
-    .star-widget label{
-        font-size: 40px;
-        color: #444;
-        padding: 10px;
-        float: right;
-        transition: all 0.2s ease;
-    }
-    input:not(:checked) ~ label:hover,
-    input:not(:checked) ~ label:hover ~ label{
-        color: #fd4;
-    }
-    input:checked ~ label{
-        color: #fd4;
-    }
-    input#rate-5:checked ~ label{
-        color: #fe7;
-        text-shadow: 0 0 20px #952;
-    }
-    #rate-1:checked ~ form header:before{
-        content: "Immediate update needed! ";
-    }
-    #rate-2:checked ~ form header:before{
-        content: "Lacks some features or is a little too buggy. ";
-    }
-    #rate-3:checked ~ form header:before{
-        content: "It's alright, nothing too special.";
-    }
-    #rate-4:checked ~ form header:before{
-        content: "Pretty good, but I wish there was one more thing.";
-    }
-    #rate-5:checked ~ form header:before{
-        content: "It's perfect! ";
-    }
-    .container form{
-        display: none;
-    }
-    input:checked ~ form{
-        display: block;
-    }
-    form header{
-        width: 100%;
-        font-size: 25px;
-        color: #fe7;
-        font-weight: 500;
-        margin: 5px 0 20px 0;
-        text-align: center;
-        transition: all 0.2s ease;
-    }
-    form .textarea{
-        height: 100px;
-        width: 100%;
-        overflow: hidden;
-    }
-    form .textarea textarea{
-        height: 100%;
-        width: 100%;
-        outline: none;
-        color: #eee;
-        border: 1px solid #333;
-        padding: 10px;
-        font-size: 17px;
-        resize: none;
-    }
-    .textarea textarea:focus{
-        border-color: #444;
-    }
-    form .btn{
-        height: 45px;
-        width: 100%;
-        margin: 15px 0;
-    }
-    form .btn button{
-        height: 100%;
-        width: 100%;
-        border: 1px solid #444;
-        outline: none;
-        background: #DEB887;
-        color: #999;
-        font-size: 17px;
-        font-weight: 500;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    form .btn button:hover{
-        background: #DEB887;
-    }
-</style>
