@@ -6,6 +6,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 //POJO
@@ -17,6 +19,7 @@ import javax.persistence.Id;
 public class ex_db_entity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     private String testString;
