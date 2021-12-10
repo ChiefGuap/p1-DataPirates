@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Database</title>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+</head>
+<body><div layout:fragment="content" th:remove="tag">
+
+    <h1>Query Database</h1>
+    <table>
+        <tr>
+            <th>String</th>
+            <th>Integer</th>
+        </tr>
+        <tr th:each="entry: ${dbQuery}">
+            <td th:text="${entry.testString}"></td>
+            <td th:text="${entry.testInt}"></td>
+        </tr>
+    </table>
+
+    <form method=""post>
+        <label for="testStringInput">String: </label>
+        <input type="text" id="testStringInput" name="testStringInput">
+        <label for="testIntInput">Integer: </label>
+        <input type="text" id="testIntInput" name="testIntInput">
+        <input type="submit" value="Submit">
+    </form>
+
+</div></body>
+
+</html>
