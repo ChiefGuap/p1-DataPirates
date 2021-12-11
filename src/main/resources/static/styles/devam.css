@@ -688,7 +688,7 @@ orange circle
 .orange01{
     width: 27vw;
     height: 27vw;
-    background: #1BACE0;
+    background: #fd063e;
     z-index: 1;
     top: 50%;
     left: 50%;
@@ -724,11 +724,11 @@ orange circle
     }
     50.01% {
         transform: rotate(-360deg);
-        background: #1BACE0;
+        background: #ec1223;
     }
     100% {
         transform: rotate(-360deg);
-        background: #1BACE0;
+        background: #f5102b;
     }
 }
 
@@ -1006,15 +1006,15 @@ body {
 }
 
 .layer.one {
-    background: #dc6c5f;
+    background: #940de3;
 }
 
 .layer.two {
-    background: #95dc84;
+    background: #d3e10f;
 }
 
 .layer.three {
-    background: #64b9d2;
+    background: #ee0d4d;
 }
 
 .bullets {

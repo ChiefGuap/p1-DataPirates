@@ -15,6 +15,17 @@ This project's main purpose is to have the user be able to rate movies and leave
 </details>
 
 
+  ## Home week 2
+
+P1-DataPirates   | [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1) | [Repo Contributors](https://github.com/ChiefGuap/p1-DataPirates/graphs/contributors) | ------ | ------ | ------ |
+------ | ------ | ------ | ------ | ------ | ------ |
+Name            | GitHub ID | Tasks | Scrum Board | Commits | Profile |
+Raquib Alam | ChiefGuap | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues?q=is%3Aissue+assignee%3AChiefGuap+) | [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1?card_filter_query=assignee%3AChiefGuap) | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues/assigned/ChiefGuap) -- [Commit Page](https://github.com/ChiefGuap/p1-DataPirates/commits?author=ChiefGuap)| [Profile](https://github.com/ChiefGuap) |
+Devam Shrivastava | devamshri | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues?q=is%3Aissue+assignee%3Adevamshri+) | [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1?card_filter_query=assignee%3Adevamshri) | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues/assigned/devamshri) -- [Commit Page](https://github.com/ChiefGuap/p1-DataPirates/commits?author=devamshri)| [Profile](https://github.com/devamshri) |
+William Cherres | BillyCherres | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues?q=is%3Aissue+assignee%3ABillyCherres+) | [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1?card_filter_query=assignee%3ABillyCherres) | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues/assigned/BillyCherres) -- [Commit Page](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres)| [Profile](https://github.com/BillyCherres) | 
+Dylan Roman | dylanroman | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues?q=is%3Aissue+assignee%3Adylanroman+) | [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1?card_filter_query=assignee%3Adylanroman) | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues/assigned/dylanroman) -- [Commit Page](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman)| [Profile](https://github.com/dylanroman) |
+Sam Koenig | samkoenig9 | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues?q=is%3Aissue+assignee%3Asamkoenig9+) | [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1?card_filter_query=assignee%3Asamkoenig9) | [Issues](https://github.com/ChiefGuap/p1-DataPirates/issues/assigned/samkoenig9) -- [Commit Page](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)| [Profile](https://github.com/samkoenig9) |
+  
 ### Team Info
 - [Billy/Raq Journal](https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit)
 - [Sam/Dylan/Devam Journal](https://docs.google.com/document/d/1tSdTbmLj6imljpYDC7OJZhwsZqx2VFLlgDK_WOr7RJA/edit)
@@ -27,7 +38,3 @@ Raq   | [Github profile](https://github.com/ChiefGuap) |[Commits](https://github
 Sam  |[Github profile](https://github.com/samkoenig9) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)| 
 Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman)| 
 Devam   | [Github profile](https://github.com/devamshri)  |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=devamshri)|
-
-
-
-
