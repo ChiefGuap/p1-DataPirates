@@ -35,7 +35,7 @@ public class apicontroller {
         JSONObject jo = (JSONObject) obj;
 
 //        System.out.println(jo.get("data"));
-        model.addAttribute("data", jo.get("d"));
+        model.addAttribute("data", jo.get("d" ));
         System.out.println(jo.get("d"));
 
         return "imdb";
