@@ -63,46 +63,30 @@ p {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color:white;
-  font-size:25px;
-  top:100px;
-  text-shadow: 2px 2px 5px #202020;
-
-
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  padding: 2rem;
-  place-content: center;
-  min-height: 75vh;
-  background-color: var(--black);
-  color: var(--white);
-  text-align: center;
-  align-content: center;
-  position: center;
-  font-size: 1.0rem;
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans",
-  "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
-  "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
-  Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  top: 100px;
+  text-shadow: 2px 2px 5px #585858;
 }
 
 .row {
   display: flex;
   position: relative;
   width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .column {
   flex: 10%;
   padding: 35px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
   width: 20px;
   color: black;
   height: auto;
   background-color: rgba(54, 215, 236, 0.253);
   border-radius: 50px;
-  margin-top: 100px;
+  margin-top: 80px;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   border: 2px solid rgba(39, 152, 167, 0.253);
