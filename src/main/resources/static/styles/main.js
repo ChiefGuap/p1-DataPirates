@@ -12,7 +12,7 @@ fetch("https://imdb8.p.rapidapi.com/auto-complete?q=game%20", {
         list.map((item) => {
             const name = item.l;
             const poster = item.i.imageUrl;
-            const movie = ',<li><img src="${poster}" <h2>${name}</h2></li>'
+            const movie = '<li><img src="${poster}" <h2>${name}</h2></li>'
             document.querySelector('.movies').innerHTML += movie;
         })
     })
