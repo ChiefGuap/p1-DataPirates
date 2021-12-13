@@ -13,6 +13,30 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+class LightSequence {
+    String sequence;
+
+    public LightSequence(String sequence) {
+        this.sequence = sequence;
+    }
+
+    public String insertSegment(String segment, int ind) {
+        StringBuilder sb = new StringBuilder(segment);
+        sb.insert(ind, segment);
+        return sb.toString();
+    }
+
+    public void changeSequence(String sequence) {
+        this.sequence = sequence;
+    }
+
+    public void display() {
+        System.out.println(sequence);
+    }
+
+}
+
+
 
 @Controller
 public class raq_apicontroller {
