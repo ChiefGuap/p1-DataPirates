@@ -34,15 +34,20 @@
 <center>
     <div class="container-fluid">
         <div class="ns-card">
-            <h1>NBA Players List </h1>
+            <h1>Movie </h1>
             <table>
                 <tr>
-                    <th>Player</th>
-                    <th>Stats</th>
+                    <th>year</th>
+                    <th>movie name</th>
+                    <th>rank</th>
+                    <th>director</th>
                 </tr>
                 <tr th:each="source: ${data}">
-                    <td th:text="${source.status}"></td>
-                    <td th:text="${source.message}"></td>
+                    <td th:text="${source.y}"></td>
+                    <td th:text="${source.l}"></td>
+                    <td th:text="${source.rank}"></td>
+                    <td th:text="${source.s}"></td>
+
                 </tr>
             </table>
         </div></div></center>
