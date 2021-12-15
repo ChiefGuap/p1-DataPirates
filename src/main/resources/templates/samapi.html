@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
 <html xmlns:layout="http://www.w3.org/1999/xhtml"
@@ -10,7 +9,7 @@
 
 <!-- <head> -->
 <div layout:fragment="body" th:remove="tag">
-    <title>MOVIE GENRE</title>
+    <title>IMDB API</title>
     <style>
         table, td, th {
             border: 1px solid white;
@@ -26,24 +25,25 @@
 
 <body class="ns-bg">
 <div layout:fragment="body"></div>
-<h1 style="text-align: center; margin-top: 1%"><strong id=>NBA API</strong></h1>
-<form style="text-align: center" action="/raq_api" method="GET" id="refreshpage">
+<h1 style="text-align: center; margin-top: 1%"><strong id=>IMDB API</strong></h1>
+<form style="text-align: center" action="/samapi" method="GET" id="refreshpage">
     <button>Refresh!</button>
 </form>
 
 <center>
     <div class="container-fluid">
         <div class="ns-card">
-            <h1>Movie </h1>
+            <h1>IMDB MOVIE LIST</h1>
             <table>
                 <tr>
-                    <th>GENREs</th>
-
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Score</th>
                 </tr>
                 <tr th:each="source: ${data}">
-                    <td th:text="${source.genre}"></td>
-
-
+                    <td th:text="${source.title}"></td>
+                    <td th:text="${source.year}"></td>
+                    <td th:text="${source.score}"></td>
                 </tr>
             </table>
         </div></div></center>
@@ -69,4 +69,4 @@
     }
 </style>
 </body>
-</html>
+</html> 

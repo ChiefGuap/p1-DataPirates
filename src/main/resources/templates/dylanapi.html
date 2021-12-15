@@ -10,7 +10,7 @@
 
 <!-- <head> -->
 <div layout:fragment="body" th:remove="tag">
-    <title>MOVIE GENRE</title>
+    <title>Actors</title>
     <style>
         table, td, th {
             border: 1px solid white;
@@ -26,24 +26,23 @@
 
 <body class="ns-bg">
 <div layout:fragment="body"></div>
-<h1 style="text-align: center; margin-top: 1%"><strong id=>NBA API</strong></h1>
-<form style="text-align: center" action="/raq_api" method="GET" id="refreshpage">
+<h1 style="text-align: center; margin-top: 1%"><strong id=> Actors and Characters</strong></h1>
+<form style="text-align: center" action="/dylanapi" method="GET" id="refreshpage">
     <button>Refresh!</button>
 </form>
 
 <center>
     <div class="container-fluid">
         <div class="ns-card">
-            <h1>Movie </h1>
+            <h1>Charaters and Actors</h1>
             <table>
                 <tr>
-                    <th>GENREs</th>
-
+                    <th>actor</th>
+                    <th>charater</th>
                 </tr>
                 <tr th:each="source: ${data}">
-                    <td th:text="${source.genre}"></td>
-
-
+                    <td th:text="${source.actor}"></td>
+                    <td th:text="${source.character}"></td>
                 </tr>
             </table>
         </div></div></center>

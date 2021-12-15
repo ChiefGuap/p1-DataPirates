@@ -5,10 +5,10 @@
       layout:decorate="~{layout}" lang="en">
   
 <!-- <head> -->
-<head>
+<head><div layout:fragment="metadata" th:remove="tag">
     <title>Draw</title>
     <link th:href="@{/styles/styles.css}" rel="stylesheet" />
-</head>
+</div></head>
 
 <body><div layout:fragment="content" th:remove="tag">
     <h1 class="text-center">JavaScript - Draw on Canvas</h1>

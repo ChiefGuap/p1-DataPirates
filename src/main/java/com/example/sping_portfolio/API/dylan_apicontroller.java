@@ -15,15 +15,15 @@ import java.net.http.HttpResponse;
 
 
 @Controller
-public class apicontroller {
+public class dylan_apicontroller {
 
     // GET request, no parameters
-    @GetMapping("/imdb")
+    @GetMapping("/dylanapi")
     public String News(Model model) throws IOException, InterruptedException, ParseException {
         //api setup:
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://imdb8.p.rapidapi.com/auto-complete?q=name"))
-                .header("x-rapidapi-host", "imdb8.p.rapidapi.com")
+                .uri(URI.create("https://imdb-internet-movie-database-unofficial.p.rapidapi.com/film/tt1375666"))
+                .header("x-rapidapi-host", "imdb-internet-movie-database-unofficial.p.rapidapi.com")
                 .header("x-rapidapi-key", "7a79b8a230mshff68040a0bd2bf0p1174f8jsnf85b178f3369")
                 .method("GET", HttpRequest.BodyPublishers.noBody())
                 .build();
@@ -35,10 +35,13 @@ public class apicontroller {
         JSONObject jo = (JSONObject) obj;
 
 //        System.out.println(jo.get("data"));
-        model.addAttribute("data", jo.get("d"));
-        System.out.println(jo.get("d"));
+        model.addAttribute("data", jo.get("cast"));
+        System.out.println(jo.get("cast"));
 
-        return "imdb";
+        return "dylanapi";
     }
 }
+
+
+
 
