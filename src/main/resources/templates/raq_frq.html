@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <div layout:fragment="head"></div>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet"/>
+</head>
+
+<!-- <head> -->
+<div layout:fragment="body" th:remove="tag">
+    <title>Raq FRQs</title>
+    <style>
+        table, td, th {
+            border: 1px solid white;
+        }
+
+        td, th {
+            text-align: right;
+        }
+
+        td:first-child, th:first-child {
+            text-align: left;
+        }
+    </style>
+</div>
+
+<body onload="getFRQ()" class="ns-bg">
+<div layout:fragment="body"></div>
+<h1 style="text-align: center; margin-top: 1%"><strong id=>FRQs</strong></h1>
+
+
+<div style="text-align: center;"></div>
+    <div class="container-fluid">
+        <div class="ns-card">
+            <h1>FRQs for Each Unit </h1>
+            <h3>Unit 2 FRQ Work</h3>
+            <div id="unit2">
+                <div class="code">
+                    <code><p id="result"></p></code>
+                </div>
+                <div class="result">
+                    <h5>Unit 2 FRQ Result</h5>
+                    <code><p id="output"></p></code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<style>
+    a {
+        color: lightskyblue;
+    }
+
+    table {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    th {
+        width: 400px;
+        text-align: left;
+    }
+
+    td {
+        width: 400px;
+        text-align: left;
+    }
+</style>
+<script>
+    function getFRQ() {
+        axios({
+            method: "GET",
+            url: "/raq_frq_api?week=2"
+        }).then(result => {
+            let resultConverted = result.data;
+            console.log(resultConverted)
+            for (let i = 0; i <= 1; i++) {
+                switch (i) {
+                    case 0:
+                        document.getElementById("result").innerText = resultConverted[0];
+                        break;
+                    case 1:
+                        var split = resultConverted[1].split(",");
+                        document.getElementById("output").innerText = split[0] + "\n" + split[1] + "\n" + split[2]
+                        break;
+                }
+            }
+
+        })
+    }
+</script>
+</body>
+</html>
+
