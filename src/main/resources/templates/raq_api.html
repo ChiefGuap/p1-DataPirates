@@ -10,7 +10,7 @@
 
 <!-- <head> -->
 <div layout:fragment="body" th:remove="tag">
-    <title>NBA API</title>
+    <title>MOVIE GENRE</title>
     <style>
         table, td, th {
             border: 1px solid white;
@@ -37,16 +37,12 @@
             <h1>Movie </h1>
             <table>
                 <tr>
-                    <th>year</th>
-                    <th>movie name</th>
-                    <th>rank</th>
-                    <th>director</th>
+                    <th>GENREs</th>
+
                 </tr>
                 <tr th:each="source: ${data}">
-                    <td th:text="${source.y}"></td>
-                    <td th:text="${source.l}"></td>
-                    <td th:text="${source.rank}"></td>
-                    <td th:text="${source.s}"></td>
+                    <td th:text="${source.genre}"></td>
+
 
                 </tr>
             </table>
