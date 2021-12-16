@@ -8,10 +8,10 @@
         <version>2.4.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.code</groupId>
-    <artifactId>p1-DataPirates</artifactId>
+    <groupId>com.nighthawk</groupId>
+    <artifactId>csa</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>coders</name>
+    <name>csa</name>
     <description>CSA project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
