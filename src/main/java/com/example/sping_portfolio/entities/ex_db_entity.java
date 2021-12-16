@@ -20,7 +20,7 @@ public class ex_db_entity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private long id;
 
     private String testString;
     private int testInt;
