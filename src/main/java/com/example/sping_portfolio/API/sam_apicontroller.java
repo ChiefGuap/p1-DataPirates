@@ -39,6 +39,11 @@ public class sam_apicontroller {
 
         return "samapi";
     }
+
+    @GetMapping("/sam_frq")
+        public String returnSamFRQ() {
+            return "sam_frq";
+        }
 }
 
 
