@@ -13,6 +13,14 @@ This project's main purpose is to have the user be able to rate movies and leave
 <li>[Scrum Board(https://github.com/ChiefGuap/p1-DataPirates/projects/1)</li>
 <li>[Wiki Page(https://github.com/ChiefGuap/p1-DataPirates/wiki)</li>
 </details>
+  
+## week 3
+People | Total Grade | Commits | What we completed |
+-------------  | -------------- | -------------- | -------------- |
+Billy  | [Github profile](https://github.com/BillyCherres) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres)|Finished the api's for the team and helped everyone with theirs aswell. Did frq 2 and 3. This weeks role was to get everybody back on task and get in code commits to make up from last week. Deployment has become an issue because there is a problem with the router. | 
+Raq   | [Github profile](https://github.com/ChiefGuap) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=ChiefGuap)|Helped everyone with the frq 2 and 3. This weeks roles for everyone was to get back on task and make sure everybody got code commits. | 
+Sam  |[Github profile](https://github.com/samkoenig9) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)|Did more UI stuff and put in place holders for the movies on the home page. Made sure there was 3 front end pages and did frq 2 and 3| 
+Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman)|Getting everybody a database and working with CRUD to be finished. Worked on FRQ 2 and 3 and got in code commits to make up for last week and this week | 
 
 
   ## Home week 2
