@@ -39,6 +39,6 @@ public class raquib2 {
         entry.setGenre(genre);
         db.commit(entry);
 
-        return "redirect:/billy/schedule";
+        return "redirect:/raq/movies";
     }
 }
