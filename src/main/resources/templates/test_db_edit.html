@@ -11,16 +11,20 @@
     <h1>Query Database</h1>
     <table>
         <tr>
+            <th>Id</th>
             <th>String</th>
             <th>Integer</th>
         </tr>
         <tr th:each="entry: ${dbQuery}">
+            <td th:text="${entry.id}"></td>
             <td th:text="${entry.testString}"></td>
             <td th:text="${entry.testInt}"></td>
         </tr>
     </table>
 
     <form method="POST">
+        <label for="id">Id:  </label>
+        <input type="text" id="id" name="id">
         <label for="testString">String: </label>
         <input type="text" id="testString" name="testString">
         <label for="testInt">Integer: </label>
@@ -28,9 +32,8 @@
         <input type="submit" value="Submit">
     </form>
 
-    <a href="/test_db/edit">Edit Entry</a>
+    <a href="/test_db">Add Entry</a>
     <a href="/test_db/delete">Delete Entry</a>
-
 
 </div></body>
 

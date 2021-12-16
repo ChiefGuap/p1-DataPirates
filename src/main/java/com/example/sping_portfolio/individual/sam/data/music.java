@@ -1,4 +1,4 @@
-package com.example.sping_portfolio.entities;
+package com.example.sping_portfolio.individual.sam.data;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,18 +10,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-//POJO
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
 @Entity
-public class ex_db_entity {
+public class music {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private int id;
 
-    private String testString;
-    private int testInt;
+    private String song;
+    private String artist;
 }
