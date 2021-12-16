@@ -1,7 +1,5 @@
-package com.example.sping_portfolio.individual.dylan.classes.services;
+package com.example.sping_portfolio.individual.billy.data;
 
-import com.example.sping_portfolio.individual.dylan.classes.entities.schedule;
-import com.example.sping_portfolio.individual.dylan.classes.repositories.schedule_repo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

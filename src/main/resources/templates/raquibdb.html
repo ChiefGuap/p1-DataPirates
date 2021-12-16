@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+</head>
+<body><div layout:fragment="content" th:remove="tag">
+
+    <h1>Query Database</h1>
+    <table>
+        <tr>
+            <th>Movie Name</th>
+            <th>Genre</th>
+        </tr>
+        <tr th:each="movie: ${movie_query}">
+            <td th:text="${movie.name}"></td>
+            <td th:text="${movie.genre}"></td>
+        </tr>
+    </table>
+
+    <form method="POST">
+        <label for="name">Movie Name: </label>
+        <input type="text" id="name" name="name">
+        <label for="genre">Movie Genre: </label>
+        <input type="text" id="genre" name="genre">
+        <input type="submit" value="Submit">
+    </form>
+
+</div></body>
+
+</html>

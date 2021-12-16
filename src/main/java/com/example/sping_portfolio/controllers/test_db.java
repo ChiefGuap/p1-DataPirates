@@ -14,7 +14,7 @@ public class test_db {
     @Autowired
     private ex_db_service ex_db;
 
-    @GetMapping(value = "/test_db")
+    @GetMapping("/test_db")
     public String test_db_render(Model model) {
         //query database
         List<ex_db_entity> list = ex_db.listALl();
@@ -28,12 +28,6 @@ public class test_db {
     public String test_db_commit(@RequestParam("testString")String testString,
                                  @RequestParam("testInt")int testInt,
                                  Model model) {
-
-        //query database
-        List<ex_db_entity> list = ex_db.listALl();
-
-        model.addAttribute("dbQuery", list);
-
         //commit to database
         ex_db_entity dbEntry = new ex_db_entity();
 

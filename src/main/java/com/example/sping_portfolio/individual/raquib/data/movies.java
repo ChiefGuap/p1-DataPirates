@@ -1,4 +1,4 @@
-package com.example.sping_portfolio.individual.dylan.classes.entities;
+package com.example.sping_portfolio.individual.raquib.data;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,13 +15,12 @@ import javax.persistence.Id;
 @Setter
 @ToString
 @Entity
-public class schedule {
+public class movies {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    private int period;
     private String name;
-    private String room;
+    private String genre;
 }
