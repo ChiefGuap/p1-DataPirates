@@ -37,4 +37,3 @@ Billy  | [Github profile](https://github.com/BillyCherres) |[Commits](https://gi
 Raq   | [Github profile](https://github.com/ChiefGuap) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=ChiefGuap)| 
 Sam  |[Github profile](https://github.com/samkoenig9) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)| 
 Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman)| 
-Devam   | [Github profile](https://github.com/devamshri)  |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=devamshri)|
