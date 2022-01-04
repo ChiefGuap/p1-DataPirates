@@ -1,8 +1,7 @@
 package com.example.sping_portfolio.services;
 
-
-import com.example.sping_portfolio.entities.ex_db_entity;
-import com.example.sping_portfolio.repositories.ex_db_repo;
+import com.example.sping_portfolio.entities.anime_rating;
+import com.example.sping_portfolio.repositories.anime_rating_repo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,28 +11,27 @@ import java.util.List;
 //methods for interacting with database
 @Service
 @Transactional
-
-public class ex1_db_service {
+public class anime_rating_service {
     @Autowired
-    private ex_db_repo jpa;
+    private anime_rating_repo jpa;
 
     //query all
-    public List<ex_db_entity> listALl() {
+    public List<anime_rating> listALl() {
         return jpa.findAll();
     }
 
     //query based on specific id
-    public ex_db_entity get(long id){
+    public anime_rating get(long id){
         return jpa.findById(id).get();
     }
 
     //query based on search, defined in repository
-    public List<ex_db_entity>listLike(String term) {
+    public List<anime_rating>listLike(String term) {
         return jpa.findBytestStringContainingIgnoreCase(term);
     }
 
     //commit to db
-    public void commit(ex_db_entity entry) {
+    public void commit(anime_rating entry) {
         jpa.save(entry);
     }
 
