@@ -27,7 +27,7 @@ public class anime_rating_service {
 
     //query based on search, defined in repository
     public List<anime_rating>listLike(String term) {
-        return jpa.findBytestStringContainingIgnoreCase(term);
+        return jpa.findBynameContainingIgnoreCase(term);
     }
 
     //commit to db

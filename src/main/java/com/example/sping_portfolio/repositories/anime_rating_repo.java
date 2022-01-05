@@ -8,5 +8,5 @@ import java.util.List;
 //query methods
 public interface anime_rating_repo extends JpaRepository<anime_rating, Long> {
     //find values in ex_db_entity based on search
-    List<anime_rating> findBytestStringContainingIgnoreCase(String testString);
+    List<anime_rating> findBynameContainingIgnoreCase(String testString);
 }
