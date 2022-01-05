@@ -1,10 +1,14 @@
+body {
+    background-color: rgb(40, 41, 54);
+}
+
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
 
     text-decoration: none;
-    color: initial;
+    color: rgb(40, 54, 255);
 }
 
 .header {
@@ -13,6 +17,7 @@ a.button {
     margin-right: 30%;
     justify-content: center;
     display: flex;
+    color: white
 }
 
 .header-text {
@@ -34,12 +39,40 @@ a.button {
 .button {
     width: 400px;
     height: 50px;
-    background-color: rgb(55, 118, 255);
+    background-color: transparent;
     border: 2px solid rgb(40, 54, 255);
     line-height: 45px;
     margin-top: 20px;
+    transition: .15s;
+}
+
+.button:hover {
+    border: 4px solid rgb(40, 54, 255);
+    background-color: rgba(21, 27, 122, 0.342);
+    color: white;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(.95);
 }
 
 .links{
     margin-top: 30px;
 }
+
+.about-icons {
+    padding: 10px;
+    transition: .15s;
+    text-align: center;
+    color: rgb(40, 54, 255)
+  }
+  
+  .about-icons:hover {
+    transform: translateY(-5px);
+    color: rgb(255, 255, 255);
+  }
+
+  .about-icons:active {
+      transform: translateY(8px) scale(.85);
+  }

@@ -161,6 +161,10 @@ p {
   color: rgb(255, 255, 255);
 }
 
+ .about-icons:active {
+      transform: translateY(8px) scale(.85);
+  }
+
 .justify-content-center {
   text-align: center;
   bottom: 5px;
