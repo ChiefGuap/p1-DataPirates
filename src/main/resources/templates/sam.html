@@ -5,12 +5,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+    <link th:href="@{/styles/sam.css}" rel="stylesheet" />
+
 </div>
 </head>
 <body><div layout:fragment="content" th:remove="tag">
+    <center><div class="header">
+        <img class="face" th:src="@{/images/sam.jpg}">
+        <div class="header-text"><h2>Sam Koenig</h2>
+        <p>P1-DataPirates Web Designer</p></div>
+    </div></center>
 
-    <br>
-    <h1>Sam's Page</h1>
+    <center><div class="links">
+        <a href="/samapi" class="button">API</a>
+        <br><a href="/sam_frq" class="button">FRQ</a>
+        <br><a href="/sam/music" class="button">Database</a>
+        <br><a href="#" class="button">Button</a>
+    </div></center>
 
 </div>
 </body>
