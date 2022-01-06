@@ -28,4 +28,12 @@ public class anime_rating {
     private String name;
     private int rating;
     private String review;
+
+    public anime_rating(int rank, String name, int rating, String review) {
+        id = id;
+        this.rank = rank;
+        this.name = name;
+        this.rating = rating;
+        this.review = review;
+    }
 }
