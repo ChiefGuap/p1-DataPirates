@@ -43,7 +43,10 @@ class Sequence {
 class billy_apicontroller {
 // billy FRQs
 
-    //Unit 4 Shit
+    //Unit 4
+
+    // 1 big String
+    // "/n" is seperating each line of code
     String week4Frq = "(a) \n" +
             "public int getPlayer2Move(int round)\n" +
             "{\n" +
@@ -143,6 +146,7 @@ class billy_apicontroller {
         output += String.valueOf(c);
         output += ",";
 
+        // this returns the array
         array[1] = output;
         return array;
     }

@@ -29,6 +29,7 @@ public class anime_rating {
     private int rating;
     private String review;
 
+    // Pojo (Plain old Java class)
     public anime_rating(int rank, String name, int rating, String review) {
         id = id;
         this.rank = rank;
