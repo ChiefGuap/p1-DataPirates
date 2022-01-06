@@ -5,27 +5,31 @@
 <html xmlns:layout="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <div layout:fragment="head"></div>
-  <link th:href="@{/styles/styles.css}" rel="stylesheet"/>
+    <div layout:fragment="head"></div>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet"/>
 
 </head>
 
 <!-- <head> -->
 <div layout:fragment="body" th:remove="tag">
-  <title>Sam's FRQs</title>
-  <style>
-    table, td, th {
-      border: 1px solid white;
-    }
+    <title>Sam FRQs</title>
+    <style>
+        table, td, th {
+            border: 1px solid white;
+        }
 
-    td, th {
-      text-align: right;
-    }
+        td, th {
+            text-align: right;
+        }
 
-    td:first-child, th:first-child {
-      text-align: left;
-    }
-  </style>
+        td:first-child, th:first-child {
+            text-align: left;
+        }
+
+        h3{
+          color: red
+        }
+    </style>
 </div>
 
 <body onload="getFRQ()" class="ns-bg">
@@ -34,66 +38,81 @@
 
 
 <div style="text-align: center;"></div>
-<div class="container-fluid">
-  <div class="ns-card">
-    <h1>FRQs for Each Unit </h1>
-    <h3>Unit 2 FRQ Work</h3>
-    <h3><a href="/draw" style="color: rgb(255, 0, 0)">Link to Unit 3 FRQ Challenge</a></h3>
-    <div id="unit2">
-      <div class="code">
-        <code><p id="result"></p></code>
-      </div>
-      <div class="result">
-        <h5><a style="color: rgb(255, 0, 0)">Unit 2 FRQ Result</a></h5>
-        <code><p id="output"></p></code>
-      </div>
+    <div class="container-fluid">
+        <div class="ns-card">
+            <h1>FRQs for Each Unit </h1>
+            <h3>Unit 2 FRQ Work</h3>
+            
+            <div id="unit2">
+                <div class="code">
+                    <code><p id="result"></p></code>
+                </div>
+                <div class="result">
+                    <h3>Unit 2 FRQ Result</h3>
+                    <code><p id="output"></p></code>
+                </div>
+                <h3><a href="/draw" style="color: red">Link to Unit 3 FRQ Challenge</a></h3>
+                <div class="result">
+                    <h3>Unit 4 FRQ</h3>
+                    <code><p id="outputweek4"></p></code>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
 
 <style>
-  a {
-    color: lightskyblue;
-  }
+    a {
+        color: lightskyblue;
+    }
 
-  table {
-    width: 100%;
-    font-size: 20px;
-  }
+    table {
+        width: 100%;
+        font-size: 20px;
+    }
 
-  th {
-    width: 400px;
-    text-align: left;
-  }
+    th {
+        width: 400px;
+        text-align: left;
+    }
 
-  td {
-    width: 400px;
-    text-align: left;
-  }
+    td {
+        width: 400px;
+        text-align: left;
+    }
 </style>
 <script>
-  function getFRQ() {
-    axios({
-      method: "GET",
-      url: "/raq_frq_api?week=2"
-    }).then(result => {
-      let resultConverted = result.data;
-      console.log(resultConverted)
-      for (let i = 0; i <= 1; i++) {
-        switch (i) {
-          case 0:
-            document.getElementById("result").innerText = resultConverted[0];
-            break;
-          case 1:
-            var split = resultConverted[1].split(",");
-            document.getElementById("output").innerText = split[0] + "\n" + split[1] + "\n" + split[2]
-            break;
-        }
-      }
+    function getFRQ() {
+        axios({
+            method: "GET",
+            url: "/sam_frq_api?week=2"
+        }).then(result => {
+            let resultConverted = result.data;
+            console.log(resultConverted)
+            for (let i = 0; i <= 1; i++) {
+                switch (i) {
+                    case 0:
+                        document.getElementById("result").innerText = resultConverted[0];
+                        break;
+                    case 1:
+                        var split = resultConverted[1].split(",");
+                        document.getElementById("output").innerText = split[0] + "\n" + split[1] + "\n" + split[2]
+                        break;
+                }
+            }
 
-    })
-  }
+        })
+
+        axios({
+            method: "GET",
+            url: "/sam_frq_api?week=4"
+        }).then(result => {
+            let resultConverted = result.data;
+            console.log(resultConverted)
+            document.getElementById("outputweek4").innerText = resultConverted[3];
+        })
+    }
 </script>
 </body>
 </html>
+
