@@ -109,6 +109,8 @@ class billy_apicontroller {
 
     @GetMapping("/billyfrq_api")
     @ResponseBody
+    // making string array variable
+    // setting an array numnber to the frq week number
     public String[] returnFRQ(@RequestParam(name = "week", required = false, defaultValue = "2") String week) {
         String[] array = new String[4];
         array[0] = week2Frq;
