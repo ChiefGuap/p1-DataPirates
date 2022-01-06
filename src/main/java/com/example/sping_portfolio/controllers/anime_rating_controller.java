@@ -36,6 +36,6 @@ public class anime_rating_controller {
         anime_rating entry = new anime_rating(rank, name, rating, review);
         ar.commit(entry);
 
-        return "anime_rating";
+        return "redirect:/ar2022/admin";
     }
 }
