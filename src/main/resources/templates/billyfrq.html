@@ -47,6 +47,10 @@
         <h5><a style="color: yellow">Unit 2 FRQ Result</a></h5>
         <code><p id="output"></p></code>
       </div>
+      <div class="result">
+        <h5><a style="color: yellow">Unit 4 FRQ Result</a></h5>
+        <code><p id="outputweek4"></p></code>
+      </div>
     </div>
   </div>
 </div>
@@ -92,6 +96,15 @@
         }
       }
 
+    })
+
+    axios({
+      method: "GET",
+      url: "/raq_frq_api?week=4"
+    }).then(result => {
+      let resultConverted = result.data;
+      console.log(resultConverted)
+      document.getElementById("outputweek4").innerText = resultConverted[3];
     })
   }
 </script>
