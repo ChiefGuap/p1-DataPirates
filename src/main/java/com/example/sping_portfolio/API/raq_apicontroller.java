@@ -47,6 +47,41 @@ class LightSequence {
 public class raq_apicontroller {
 // Raq FRQs
 
+// Unit 4 FRQ
+    String week4Frq = "(a) \n" +
+        "public int getPlayer2Move(int round)\n" +
+        "{\n" +
+        "int result;\n" +
+        "  return result;\n" +
+        "}\n" +
+        " \n" +
+        "Public int getPlayer2Move(int round) {\n" +
+        "if(round % 3 == 0) return 3; \n" +
+        "if(round % 2 == 0) return 2;\n" +
+        "Return 1; \n" +
+        "}\n" +
+        "(b) \n" +
+    "public void playGame() \n" +
+    "int playerOneCoins = startingCoins; \n" +
+    "Int playerTwoCoins = startingCoins; \n" +
+        "Int numberOfRoundsLeft = maxRounds; \n" +
+"while(playerOneCoins > 3 && playerTwoCoins > 3 && numberOfRoundsLeft > 0){ \n" +
+       "numberOfRoundsLeft —; \n" +
+        "Int m1 = getPlayerOneMove(); \n" +
+       " Int m2 = getPlayerTwoMove(); \n" +
+       " playerOneCoins -= m1; \n" +
+       " playerTwoCoins -= m2; \n" +
+
+       " if(m1 == m2) += 1; \n" +
+       " if(m1-m2 == 1) playerTwoCoins +=1; \n" +
+        " if(m1-m2 == 2) playerOneCoins +=1; \n" +
+
+   " } \n" +
+   " ; \n";
+
+
+
+
 // Unit 2
 
     String week2Frq = "(a) \n" +
@@ -77,8 +112,9 @@ public class raq_apicontroller {
     @GetMapping("/raq_frq_api")
     @ResponseBody
     public String [] returnFRQ(@RequestParam(name = "week", required = false, defaultValue = "2") String week) {
-        String[] array = new String[3];
+        String[] array = new String[4];
         array[0] = week2Frq;
+        array[3] = week4Frq;
 
         // FRQ Handling
 
