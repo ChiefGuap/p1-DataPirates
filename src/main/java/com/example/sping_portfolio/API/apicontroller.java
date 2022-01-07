@@ -46,6 +46,8 @@ class billy_apicontroller {
     //Unit 4
 
     // 1 big String
+    // Initialized the string by naming it week 4 frq
+    // This string is the answer to the FRQ
     // "/n" is seperating each line of code
     String week4Frq = "(a) \n" +
             "public int getPlayer2Move(int round)\n" +
@@ -109,8 +111,8 @@ class billy_apicontroller {
 
     @GetMapping("/billyfrq_api")
     @ResponseBody
-    // making string array variable
-    // setting an array numnber to the frq week number
+    // This is making a string array variable attatched to an array value.
+    // This is done by setting an array numnber to the frq week number
     public String[] returnFRQ(@RequestParam(name = "week", required = false, defaultValue = "2") String week) {
         String[] array = new String[4];
         array[0] = week2Frq;
