@@ -13,12 +13,14 @@
     <h1>Query Database</h1>
     <table>
         <tr>
+            <th>Id</th>
             <th>Rank</th>
             <th>Name</th>
             <th>Rating</th>
             <th>Review</th>
         </tr>
         <tr th:each="anime: ${ar_query}">
+            <td th:text="${anime.id}"></td>
             <td th:text="${anime.rank}"></td>
             <td th:text="${anime.name}"></td>
             <td th:text="${anime.rating}"></td>
@@ -27,18 +29,12 @@
     </table>
 
     <form method="POST">
-        <label for="rank">Rank: </label>
-        <input type="text" id="rank" name="rank">
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name">
-        <label for="rating">Rating: </label>
-        <input type="text" id="rating" name="rating">
-        <label for="review">Review: </label>
-        <input type="text" id="review" name="review">
+        <label for="id">Id: </label>
+        <input type="text" id="id" name="id">
         <input type="submit" value="Submit">
     </form>
 
-    <a href="/ar2022/admin/delete">Delete</a>
+    <a href="/ar2022/admin">Add</a>
     <a href="/ar2022/admin/edit">Edit</a>
 
 </div></body>
