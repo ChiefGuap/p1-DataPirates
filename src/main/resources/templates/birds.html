@@ -3,12 +3,14 @@
       layout:decorate="~{layout}" lang="en">
 
 <head><div layout:fragment="metadata" th:remove="tag">
-    <!-- Start of head content specific to page -->
-    <title>Birds</title>
-    <!-- End of head content specific to page -->
+  <meta charset="UTF-8">
+  <title>Birds</title>
+  <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/7f43a63809.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </div></head>
 
-<body><div layout:fragment="content" th:remove="tag">
+<body style="height: 100vh;"><div layout:fragment="content" th:remove="tag">
     <!-- Start of body content specific to page -->
     <div class="product" style="margin-top: 2%;">
         <div class="row" style="padding: 0% 10% 5%;">
