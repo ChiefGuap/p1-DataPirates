@@ -9,16 +9,8 @@ This project's main purpose is to have the user be able to rate movies and leave
 
 
 ![About Us Page](https://github.com/ChiefGuap/p1-DataPirates/blob/master/src/main/resources/static/images/movietalk.png)
-<details>
-<summary>Links: </summary>
-<ul>
-<li>[Scrum Board(https://github.com/ChiefGuap/p1-DataPirates/projects/1)</li>
-<li>[Wiki Page(https://github.com/ChiefGuap/p1-DataPirates/wiki)</li>
-</details>
-  
-  
-  
-  
+
+   
 ## week 3
 People | Total Grade | Commits | What we completed |
 -------------  | -------------- | -------------- | -------------- |
