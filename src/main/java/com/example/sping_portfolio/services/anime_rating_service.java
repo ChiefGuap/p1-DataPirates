@@ -13,6 +13,9 @@ import java.util.List;
 @Transactional
 public class anime_rating_service {
     @Autowired
+    // This uses methods from our JPA repesitory
+    // This file creates the methods we use in the backend
+    // Methods below are the repository methods
     private anime_rating_repo jpa;
 
     //query all

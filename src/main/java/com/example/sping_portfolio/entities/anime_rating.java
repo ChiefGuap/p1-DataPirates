@@ -29,7 +29,8 @@ public class anime_rating {
     private int rating;
     private String review;
 
-    // Pojo (Plain old Java class)
+    // Created a constructor for easy backend use
+    // This allows us to create a java object easily out of this entity
     public anime_rating(int rank, String name, int rating, String review) {
         id = id;
         this.rank = rank;

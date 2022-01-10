@@ -46,7 +46,7 @@ class billy_apicontroller {
     //Unit 4
 
     // 1 big String
-    // Initialized the string by naming it week 4 frq
+    // I Initialized the string by naming it week 4 frq
     // This string is the answer to the FRQ
     // "/n" is seperating each line of code
     String week4Frq = "(a) \n" +
