@@ -19,6 +19,7 @@ Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://git
   
   
 ## week 5
+
 People | Commits | What we completed |
 ------------- | -------------- | -------------- |
 Billy  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres) | Jekyll/frq  |
@@ -29,6 +30,7 @@ Sam  |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samko
 
 
 ## week 4
+
 People | Commits | What we completed |
 ------------- | -------------- | -------------- |
 Billy  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres) | Database/frq  |
@@ -39,6 +41,7 @@ Sam  |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samko
   
   
 ## week 3
+
 People | Total Grade | Commits | What we completed |
 -------------  | -------------- | -------------- | -------------- |
 Billy  | [Github profile](https://github.com/BillyCherres) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres)|Finished the api's for the team and helped everyone with theirs aswell. Did frq 2 and 3. This weeks role was to get everybody back on task and get in code commits to make up from last week. Deployment has become an issue because there is a problem with the router. | 
