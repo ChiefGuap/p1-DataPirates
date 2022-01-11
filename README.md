@@ -27,6 +27,7 @@ Dylan  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dy
 Sam  |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)  | frq  |
 
 
+
 ## week 4
 People | Commits | What we completed |
 ------------- | -------------- | -------------- |
@@ -35,7 +36,8 @@ Raq  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=Chie
 Dylan  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman) |  Database/frq |
 Sam  |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)  | Front end/frq  |
               
-              
+  
+  
 ## week 3
 People | Total Grade | Commits | What we completed |
 -------------  | -------------- | -------------- | -------------- |
@@ -46,7 +48,8 @@ Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://git
 
 
   
-## Home week 2
+  
+## week 2
 
 P1-DataPirates   | [Scrum Board](https://github.com/ChiefGuap/p1-DataPirates/projects/1) | [Repo Contributors](https://github.com/ChiefGuap/p1-DataPirates/graphs/contributors) | ------ | ------ | ------ |
 ------ | ------ | ------ | ------ | ------ | ------ |
