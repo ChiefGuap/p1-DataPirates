@@ -14,7 +14,8 @@ Sam  |[Github profile](https://github.com/samkoenig9) |[Commits](https://github.
 Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman)| 
 
 
-![About Us Page](https://github.com/ChiefGuap/p1-DataPirates/blob/master/src/main/resources/static/images/movietalk.png)
+![About Us Page](https://user-images.githubusercontent.com/72891935/148991151-345d249d-e8bf-4612-84a4-eccff8b9dea7.png)
+
 
   
   
