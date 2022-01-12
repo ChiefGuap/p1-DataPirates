@@ -41,9 +41,9 @@ a.button {
     height: 50px;
     background-color: transparent;
     border: 2px solid rgb(40, 54, 255);
-    line-height: 45px;
     margin-top: 20px;
     transition: .15s;
+    border-radius: 0%;
 }
 
 .button:hover {
