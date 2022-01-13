@@ -23,10 +23,10 @@ Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://git
 
 People | Commits | What we completed |
 ------------- | -------------- | -------------- |
-Billy  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres) | Jekyll/frq  |
+Billy  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres) | [Jekyll](https://chiefguap.github.io/p1-DataPirates/) /frq  |
 Raq  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=ChiefGuap) |  frq |
-Dylan  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman) |  frq |
-Sam  |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)  | frq  |
+Dylan  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman) |  frq (has covid) |
+Sam  |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)  | frq/ [bootstrap front end work (navbar)](https://movietalk.nighthawkcodingsociety.com)  |
 
 
 
