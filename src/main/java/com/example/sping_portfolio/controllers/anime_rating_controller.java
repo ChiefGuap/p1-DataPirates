@@ -28,9 +28,9 @@ public class anime_rating_controller {
 
     @PostMapping("/ar2022/admin")
     public String ar2022_admin(@RequestParam("rank") int rank,
-                           @RequestParam("name") String name,
-                           @RequestParam("rating") int rating,
-                           @RequestParam("review") String review) {
+                               @RequestParam("name") String name,
+                               @RequestParam("rating") int rating,
+                               @RequestParam("review") String review) {
 
         //commit to db
         anime_rating entry = new anime_rating(rank, name, rating, review);
@@ -77,5 +77,6 @@ public class anime_rating_controller {
         ar.commit(entry);
 
         return "redirect:/ar2022/admin/edit";
+
     }
 }
