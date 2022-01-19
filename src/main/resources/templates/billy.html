@@ -3,45 +3,32 @@
       layout:decorate="~{layout}" lang="en">
 <head><div layout:fragment="metadata" th:remove="tag">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Billy</title>
     <link th:href="@{/styles/styles.css}" rel="stylesheet" />
-</div>
-
-</head>
-
-
+    <link th:href="@{/styles/billy.css}" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7f43a63809.js" crossorigin="anonymous"></script>
+</div></head>
 <body><div layout:fragment="content" th:remove="tag">
+    <center><div class="header">
+        <img class="face" th:src="@{/images/billy.png}">
+        <div class="header-text"><h2>Billy Cherres</h2>
+        <p>P1-DataPirates Deployment Manager</p></div>
+    </div></center>
 
+    <center><div class="links">
+        <center><a href="https://github.com/BillyCherres" style="text-decoration: none; color:black;" target="_blank" title="GitHub Profile"><i class="about-icons fab fa-github fa-2x"></i></a>
+        <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit?usp=sharing" style="text-decoration: none; color:black;" target="_blank" title="Journal"><i class="about-icons fas fa-book fa-2x"></i></a>
+        <!-- <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit#bookmark=id.vfw5ql5wcgle" style="text-decoration: none; color: black;" target="_blank"><i class="about-icons fa-solid fa-code fa-2x"></i></a> -->
+        </center>   
+        <a href="/imdb" class="button btn btn-primary btn-lg">IMDB API</a>
+        <br><a href="/billyfrq" class="button btn btn-primary btn-lg">FRQ</a>
+        <br><a href="/billy/schedule" class="button btn btn-primary btn-lg">Database</a>
+        <br><a href="/ar2022/admin" class="button btn btn-primary btn-lg">Ripe Tomatoes</a>
+        <br><a href="https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres" class="button btn btn-primary btn-lg">Github Code Commits</a>
+        <br><a href="https://github.com/ChiefGuap/p1-DataPirates/graphs/contributors" class="button btn btn-primary btn-lg">Github Insights</a>
+        <br><a href="/search" class="button btn btn-primary btn-lg">Search</a>
+    </div></center>
 
-    <br>
-    <h1>Billy's Page</h1>
-<div>
-    <a href="/imdb">IMDB API</a>
 </div>
-
-<div>
-    <a href="/billyfrq">FRQ's</a>
-<div>
-    <a href="/billy/schedule">database</a>
-</div>
-    <div>
-        <a href="/ar2022/admin">Ripe Tomatoes</a>
-    </div>
-
-    <div>
-        <a href="https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres">Github Code Commits</a>
-    </div>
-
-    <div>
-        <a href="https://github.com/ChiefGuap/p1-DataPirates/graphs/contributors">Github Insights</a>
-    </div>
-    <div>
-        <a href="/search">search</a>
-    </div>
-
-    <!--https://pagedart.com/blog/how-to-add-a-search-bar-in-html/
-   -->
-
 </body>
-
 </html>

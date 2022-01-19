@@ -3,27 +3,29 @@
       layout:decorate="~{layout}" lang="en">
 <head><div layout:fragment="metadata" th:remove="tag">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Dylan</title>
     <link th:href="@{/styles/styles.css}" rel="stylesheet" />
-</div>
-</head>
+    <link th:href="@{/styles/dylan.css}" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7f43a63809.js" crossorigin="anonymous"></script>
+</div></head>
 <body><div layout:fragment="content" th:remove="tag">
+    <center><div class="header">
+        <img class="face" th:src="@{/images/dylan.jpg}">
+        <div class="header-text"><h2>Dylan Roman</h2>
+        <p>P1-DataPirates Technical Officer</p></div>
+    </div></center>
 
-    <br>
-    <h1>Dylan's Page</h1>
-    <div>
-        <a href="/dylanfrq">FRQ's</a>
-    <div>
-        <a href="https://github.com/dylanroman">GitHub</a>
-    </div>
-    <div>
-        <a href="https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman">Commits</a>
-    </div>
-    <div>
-        <a href="https://github.com/ChiefGuap/p1-DataPirates/graphs/contributors">Project Insights</a>
-    </div>
-    <div>
-        <a href="/ar2022/admin">Weekly Runtime</a>
-    </div>
+    <center><div class="links">
+        <center><a href="https://github.com/dylanroman" style="text-decoration: none; color:black;" target="_blank" title="GitHub Profile"><i class="about-icons fab fa-github fa-2x"></i></a>
+        <a href="https://docs.google.com/document/d/1tSdTbmLj6imljpYDC7OJZhwsZqx2VFLlgDK_WOr7RJA/edit?usp=sharing" style="text-decoration: none; color:black;" target="_blank" title="Journal"><i class="about-icons fas fa-book fa-2x"></i></a>
+        <!-- <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit#bookmark=id.vfw5ql5wcgle" style="text-decoration: none; color: black;" target="_blank"><i class="about-icons fa-solid fa-code fa-2x"></i></a> -->
+        </center>   
+        <a href="/dylanfrq" class="button btn btn-primary btn-lg">FRQ</a>
+        <br><a href="https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman" class="button btn btn-primary btn-lg">Commits</a>
+        <br><a href="https://github.com/ChiefGuap/p1-DataPirates/graphs/contributors" class="button btn btn-primary btn-lg">Project Insights</a>
+        <br><a href="/ar2022/admin" class="button btn btn-primary btn-lg">Weekly Runtime</a>
+    </div></center>
+
+</div>
 </body>
 </html>
