@@ -51,8 +51,38 @@
         <h5><a style="color: blue">Unit 4 FRQ Result</a></h5>
         <code><p id="outputweek4"></p></code>
       </div>
+      <div class="result">
+        <h5><a style="color: blue">Unit 5 FRQ Result</a></h5>
+        <code><p id="outputweek5"></p></code>
+      </div>
     </div>
   </div>
+  <table>
+    <tr>
+      <th>Host Name</th>
+    </tr>
+  </table>
+  <div>
+    <!--                <p id="invitation" th:text="${object.sendInvite()}"></p>-->
+    <p id="eventResult"></p>
+  </div>
+  <!--            <div class="output">-->
+  <!--                <p><strong>OUTPUT FROM JAVA FRQ CODE</strong></p>-->
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    function sequence5() {
+      let host = document.getElementById("host_name").value;
+      let address = document.getElementById("address").value;
+      let invitee = document.getElementById("invitee").value;
+
+      console.log(`h: ${host}`)
+      axios({
+        url: "/createEventAPI?host=" + host + "&address=" + address + "&invitee=" + invitee,
+        method: "GET"
+      }).then(resp => {
+        console.log(resp.data)
+        document.getElementById("eventResult").innerText = resp.data;
+      })
 </div>
 
 
@@ -97,10 +127,14 @@
       }
 
     })
+
+
 // through java script... using the axios function, we are calling the frq week connecting the java into the html file
     // "resultConverted[3]" Links the java file to the HTML FILE
     // 3 is the ID from the Array function
     axios({
+
+    }
       method: "GET",
       url: "/raq_frq_api?week=4"
     }).then(result => {
