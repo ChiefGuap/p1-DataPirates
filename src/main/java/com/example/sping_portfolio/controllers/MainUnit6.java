@@ -1,3 +1,5 @@
+package com.example.sping_portfolio.controllers;
+
 import java.util.*;
 import java.util.ArrayList;
 import java.util.Scanner; 

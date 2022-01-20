@@ -53,7 +53,7 @@ p {
   color:white;
   font-size:100px;
   position: relative;
-  padding-top: 100px;
+  padding-top: 60px;
   text-shadow: 2px 2px 5px #585858;
 }
 
@@ -86,7 +86,7 @@ p {
   height: auto;
   background-color: rgba(54, 215, 236, 0.253);
   border-radius: 50px;
-  margin-top: 80px;
+  margin-top: 60px;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   border: 2px solid rgba(39, 152, 167, 0.253);
@@ -148,10 +148,12 @@ p {
   font-family: 'Lato', sans-serif;
   color: black;
   font-size: 20px;
+  margin-top: 10px;
 }
 
 .about-icons {
   padding: 10px;
+  margin-top: 10px;
   transition: .15s;
   text-align: center;
 }
