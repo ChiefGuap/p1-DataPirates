@@ -1,149 +1,17 @@
-<!DOCTYPE HTML>
-<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+<head><div layout:fragment="metadata" th:remove="tag">
+    <meta charset="UTF-8">
+    <title>Billy FRQs</title>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7f43a63809.js" crossorigin="anonymous"></script>
+</div></head>
 
-<html xmlns:layout="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-  <div layout:fragment="head"></div>
-  <link th:href="@{/styles/styles.css}" rel="stylesheet"/>
-
-</head>
-
-<!-- <head> -->
-<div layout:fragment="body" th:remove="tag">
-  <title>Billy's FRQs</title>
-  <style>
-    table, td, th {
-      border: 1px solid white;
-    }
-
-    td, th {
-      text-align: right;
-    }
-
-    td:first-child, th:first-child {
-      text-align: left;
-    }
-  </style>
+<body style="background-color: rgb(78, 78, 78);"><div layout:fragment="content" th:remove="tag">
+    <br><br>
+    <h3 style="color: white;">Click the file icon on the left to view FRQs</h3>
+    <center><iframe frameborder="0" width="95%" height="600px" src="https://replit.com/@sexybakas/FRQs?lite=true"></iframe></center>
 </div>
-
-<body onload="getFRQ()" class="ns-bg">
-<div layout:fragment="body"></div>
-<h1 style="text-align: center; margin-top: 1%"><strong id=>FRQs</strong></h1>
-
-
-<div style="text-align: center;"></div>
-<div class="container-fluid">
-  <div class="ns-card">
-    <h1>FRQs for Each Unit </h1>
-    <h3>Unit 2 FRQ Work</h3>
-    <h3><a href="/draw" style="color: blue">Link to Unit 3 FRQ Challenge</a></h3>
-    <div id="unit2">
-      <div class="code">
-        <code><p id="result"></p></code>
-      </div>
-      <div class="result">
-        <h5><a style="color: blue">Unit 2 FRQ Result</a></h5>
-        <code><p id="output"></p></code>
-      </div>
-      <div class="result">
-        <h5><a style="color: blue">Unit 4 FRQ Result</a></h5>
-        <code><p id="outputweek4"></p></code>
-      </div>
-      <div class="result">
-        <h5><a style="color: blue">Unit 5 FRQ Result</a></h5>
-        <code><p id="outputweek5"></p></code>
-      </div>
-    </div>
-  </div>
-  <table>
-    <tr>
-      <th>Host Name</th>
-    </tr>
-  </table>
-  <div>
-    <!--                <p id="invitation" th:text="${object.sendInvite()}"></p>-->
-    <p id="eventResult"></p>
-  </div>
-  <!--            <div class="output">-->
-  <!--                <p><strong>OUTPUT FROM JAVA FRQ CODE</strong></p>-->
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    function sequence5() {
-      let host = document.getElementById("host_name").value;
-      let address = document.getElementById("address").value;
-      let invitee = document.getElementById("invitee").value;
-
-      console.log(`h: ${host}`)
-      axios({
-        url: "/createEventAPI?host=" + host + "&address=" + address + "&invitee=" + invitee,
-        method: "GET"
-      }).then(resp => {
-        console.log(resp.data)
-        document.getElementById("eventResult").innerText = resp.data;
-      })
-</div>
-
-
-<style>
-  a {
-    color: lightskyblue;
-  }
-
-  table {
-    width: 100%;
-    font-size: 20px;
-  }
-
-  th {
-    width: 400px;
-    text-align: left;
-  }
-
-  td {
-    width: 400px;
-    text-align: left;
-  }
-</style>
-<script>
-  function getFRQ() {
-    axios({
-      method: "GET",
-      url: "/raq_frq_api?week=2"
-    }).then(result => {
-      let resultConverted = result.data;
-      console.log(resultConverted)
-      for (let i = 0; i <= 1; i++) {
-        switch (i) {
-          case 0:
-            document.getElementById("result").innerText = resultConverted[0];
-            break;
-          case 1:
-            var split = resultConverted[1].split(",");
-            document.getElementById("output").innerText = split[0] + "\n" + split[1] + "\n" + split[2]
-            break;
-        }
-      }
-
-    })
-
-
-// through java script... using the axios function, we are calling the frq week connecting the java into the html file
-    // "resultConverted[3]" Links the java file to the HTML FILE
-    // 3 is the ID from the Array function
-    axios({
-
-    }
-      method: "GET",
-      url: "/raq_frq_api?week=4"
-    }).then(result => {
-      let resultConverted = result.data;
-      console.log(resultConverted)
-      document.getElementById("outputweek4").innerText = resultConverted[3];
-    })
-  }
-</script>
 </body>
 </html>
-
