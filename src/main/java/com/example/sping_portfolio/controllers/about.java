@@ -16,6 +16,11 @@ public class about {
     public String search() {
         return "search"; // returns HTML VIEW (greeting)
     }
+
+    @GetMapping("/billyfrq")
+    public String billyfrq() {
+        return "billyfrq"; // returns HTML VIEW (greeting)
+    }
 }
 
 
