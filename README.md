@@ -19,6 +19,7 @@ Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://git
 
  ## FRQ REPO's
  - [Billy](https://github.com/BillyCherres/frq-all-of-them)
+ - [RaqShaq](https://github.com/ChiefGuap/FRQ-s-for-AP-Computer-Science-A/tree/main)
   
 ## week 5
 
