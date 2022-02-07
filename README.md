@@ -17,7 +17,7 @@ Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://git
 ![About Us Page](https://user-images.githubusercontent.com/72891935/148991151-345d249d-e8bf-4612-84a4-eccff8b9dea7.png)
 
 
- ## FRQ REPO
+ ## FRQ REPO's
  - [Billy](https://github.com/BillyCherres/frq-all-of-them)
   
 ## week 5
