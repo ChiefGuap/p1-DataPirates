@@ -8,7 +8,7 @@
 
     <style>
         .search_style{
-            padding-top: 100%;
+            padding-top: 10%;
         }
     </style>
 </div></head>
@@ -18,12 +18,12 @@
         <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
         <button>
             <svg viewBox="0 0 1024 1024"><path class="path1"></path></svg>
- </button>
+        </button>
     </form>
     <script>
         const f = document.getElementById('form');
         const q = document.getElementById('query');
-        const google = 'localhost:8088/search';
+        const google = 'https://www.google.com/search?q=site%3A+';
         const site = 'movietalk.nighthawkcodingsociety.com';
 
         function submitted(event) {
@@ -36,18 +36,12 @@
         f.addEventListener('submit', submitted);
     </script>
 
+    <!---  https://stackoverflow.com/questions/10028934/how-to-show-google-search-results-embedded-in-my-website --->
 
-    <script src="https://kit.fontawesome.com/7f43a63809.js" crossorigin="anonymous"></script>
-</div></head>
-
-<body style="background-color: rgb(78, 78, 78);">
-
-<div layout:fragment="content" th:remove="tag">
-    <br><br>
-    <h3 style="color: white;">Click the file icon on the left to view FRQs</h3>
-    <center><iframe frameborder="0" width="95%" height="600px" src="https://replit.com/@WilliamCherres/frq-all-of-them?lite=true"></iframe></center>
+<br><br>
+<h3 style="color: white;">Click the file icon on the left to view FRQs</h3>
+<center><iframe frameborder="0" width="95%" height="600px" src="https://www.google.com/search?igu=1&q=site%3A+"></iframe></center>
 </div>
 
 </body>
-
 </html>
