@@ -21,6 +21,11 @@ public class about {
     public String billyfrq() {
         return "billyfrq"; // returns HTML VIEW (greeting)
     }
+
+    @GetMapping("/featuredmovies")
+    public String featuredmovies() {
+        return "featuredmovies"; // returns HTML VIEW (greeting)
+    }
 }
 
 
