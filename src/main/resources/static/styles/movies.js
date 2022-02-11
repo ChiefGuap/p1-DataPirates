@@ -21,3 +21,4 @@ fetch("https://imdb8.p.rapidapi.com/auto-complete?q=game%20of%20th", {
     .catch(err => {
         console.error(err);
     });
+        
