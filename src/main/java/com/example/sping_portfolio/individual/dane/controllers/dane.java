@@ -13,7 +13,7 @@ import java.util.List;
 public class dane {
 
     @GetMapping("/dane")
-    public String sam() {
+    public String dane() {
         return "dane";
     }
 }
