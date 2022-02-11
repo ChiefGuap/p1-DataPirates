@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+<head><div layout:fragment="metadata" th:remove="tag">
     <meta charset="UTF-8">
-    <title> Movies</title>
-</head>
+    <title>Dylan FRQs</title>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7f43a63809.js" crossorigin="anonymous"></script>
+</div></head>
 <body>
     <div class="movies"></div>
     <script src="movies.js"></script>
