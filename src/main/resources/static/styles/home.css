@@ -259,19 +259,19 @@ h2:after {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(29, 29, 29, 0.61);
+  background: rgba(65, 65, 65, 0.61);
   border-radius: 1000px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(156, 156, 156); 
+  background: rgb(104, 104, 104); 
   border-radius: 1000px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: rgb(78, 78, 78); 
 }
 
 .homelogo {
