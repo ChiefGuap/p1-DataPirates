@@ -27,7 +27,7 @@ public class login_service {
 
     //query based on search, defined in repository
     public List<login_entity>listLike(String term) {
-        return jpa.findBytestStringContainingIgnoreCase(term);
+        return jpa.findByusernameContainingIgnoreCase(term);
     }
 
     //commit to db

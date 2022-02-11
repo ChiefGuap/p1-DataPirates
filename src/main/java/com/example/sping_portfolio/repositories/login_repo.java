@@ -8,5 +8,5 @@ import java.util.List;
 //query methods
 public interface login_repo extends JpaRepository<login_entity, Long> {
     //find values in ex_db_entity based on search
-    List<login_entity> findBytestStringContainingIgnoreCase(String testString);
+    List<login_entity> findByusernameContainingIgnoreCase(String testString);
 }
