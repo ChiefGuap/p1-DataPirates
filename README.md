@@ -12,6 +12,7 @@ Billy  | [Github profile](https://github.com/BillyCherres) |[Commits](https://gi
 Raq   | [Github profile](https://github.com/ChiefGuap) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=ChiefGuap)| 
 Sam  |[Github profile](https://github.com/samkoenig9) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)| 
 Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman)| 
+Dane   | [Github profile](https://github.com/D1935827V) |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=D1935827V)| 
 
 
 ![About Us Page](https://user-images.githubusercontent.com/72891935/148991151-345d249d-e8bf-4612-84a4-eccff8b9dea7.png)
