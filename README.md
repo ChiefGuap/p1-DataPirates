@@ -17,6 +17,16 @@ Dylan   | [Github profile](https://github.com/dylanroman) |[Commits](https://git
 ![About Us Page](https://user-images.githubusercontent.com/72891935/148991151-345d249d-e8bf-4612-84a4-eccff8b9dea7.png)
 
 
+## week 11
+
+People | Commits | What we completed |
+------------- | -------------- | -------------- |
+Billy  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=BillyCherres) | Search  |
+Raq  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=ChiefGuap) |  Imdb api |
+Dylan  | [Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=dylanroman) |  login page |
+Sam  |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)  | Front end|
+Dane  |[Commits](https://github.com/ChiefGuap/p1-DataPirates/commits?author=samkoenig9)  | html game|
+
 
 
 
