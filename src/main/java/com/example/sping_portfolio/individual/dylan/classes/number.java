@@ -1,3 +1,5 @@
+package com.example.sping_portfolio.individual.dylan.classes;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -15,7 +17,7 @@ public class number {
     public void addnum() {
         Random rand = new Random();
 
-        for(int i = 0; i <= this.amnt; i++) {
+        for(int i = 0; i < this.amnt; i++) {
             int randnum = rand.nextInt(33) + 3;
 
             this.nums.add(randnum);
@@ -33,8 +35,11 @@ public class number {
 
         ArrayList<Integer> squirrels = squirrel.getNums();
 
+        int x = 0;
+
         for(int animal : squirrels) {
-            System.out.println("Squirrels: " + animal);
+            x++;
+            System.out.println("Squirrels: " + animal + " Day: " + x);
         }
     }
 }
