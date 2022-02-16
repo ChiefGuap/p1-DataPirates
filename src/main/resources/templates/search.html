@@ -26,6 +26,7 @@
         const google = 'https://www.google.com/search?q=site%3A+';
         const site = 'movietalk.nighthawkcodingsociety.com';
 
+
         function submitted(event) {
             event.preventDefault();
             const url = google + site + '+' + q.value;
@@ -40,8 +41,32 @@
 
 <br><br>
 <h3 style="color: white;">Click the file icon on the left to view FRQs</h3>
-<center><iframe frameborder="0" width="95%" height="600px" src="https://www.google.com/search?igu=1&q=site%3A+"></iframe></center>
+<center><iframe frameborder="0" width="95%" height="600px" src=function onsubmit="submitted"></iframe></center>
 </div>
 
 </body>
+
 </html>
+
+<!---
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script language="javascript" type="text/javascript">
+function showDiv(){
+document.getElementById('popDiv').style.display='block';
+document.getElementById('popIframe').style.display='block';
+document.getElementById('bg').style.display='block';
+document.getElementById('popIframe').src='b.html';
+}
+</script>
+</head>
+<body>
+<div id="popDiv" class="mydiv" style="display:none;">This is a test
+<div id="bg" class="bg" style="display:none;"></div>
+<a href="javascript:showDiv()">Click here</a>
+<iframe id='popIframe' class='popIframe' frameborder='0' ></iframe>
+</body>
+</html>
+--->
