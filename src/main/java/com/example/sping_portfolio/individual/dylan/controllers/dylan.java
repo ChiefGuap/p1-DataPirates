@@ -8,6 +8,6 @@ public class dylan {
     @GetMapping("/dylan")
 
     public String dylan() {
-        return "dylan";
+        return "/dylan/dylan";
     }
 }

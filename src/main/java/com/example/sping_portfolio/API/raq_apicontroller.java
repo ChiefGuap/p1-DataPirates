@@ -107,7 +107,7 @@ public class raq_apicontroller {
             " \n";
     @GetMapping("/raq_frq")
         public String returnRaqFRQ() {
-            return "raq_frq";
+            return "/raq/raq_frq";
         }
     @GetMapping("/raq_frq_api")
     @ResponseBody
@@ -173,7 +173,7 @@ public class raq_apicontroller {
         model.addAttribute("data", jo.get("results" ));
         System.out.println(jo.get("results"));
 
-        return "raq_api";
+        return "/raq/raq_api";
     }
 }
 

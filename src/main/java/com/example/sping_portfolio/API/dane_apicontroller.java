@@ -19,6 +19,6 @@ import java.net.http.HttpResponse;
 public class dane_apicontroller {
     @GetMapping("/dane_frq")
         public String returnDaneFRQ() {
-            return "dane_frq";
+            return "/dane/dane_frq";
         }
     }

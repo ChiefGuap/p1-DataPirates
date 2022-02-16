@@ -18,7 +18,7 @@ public class sam {
 
     @GetMapping("/sam")
     public String sam() {
-        return "sam";
+        return "/sam/sam";
     }
 
     //database
@@ -28,7 +28,7 @@ public class sam {
 
         model.addAttribute("music_query", list);
 
-        return "samdb";
+        return "/sam/samdb";
     }
 
     @PostMapping("/sam/music")

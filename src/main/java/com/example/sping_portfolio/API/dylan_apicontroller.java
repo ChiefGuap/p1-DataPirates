@@ -71,7 +71,7 @@ class dylan_apicontroller {
             " \n";
     @GetMapping("/dylanfrq")
     public String returndylanFRQ() {
-        return "dylanfrq";
+        return "/dylan/dylanfrq";
     }
 
     @GetMapping("/dylanfrq_api")

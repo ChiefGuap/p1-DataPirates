@@ -18,7 +18,7 @@ public class billy {
 
     @GetMapping("/billy")
     public String billy() {
-        return "billy";
+        return "/billy/billy";
     }
 
     //database
@@ -28,7 +28,7 @@ public class billy {
 
         model.addAttribute("schedule_query", list);
 
-        return "billydb";
+        return "/billy/billydb";
     }
 
     @PostMapping("/billy/schedule")

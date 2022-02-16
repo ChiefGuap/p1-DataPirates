@@ -8,6 +8,6 @@ public class raquib {
     @GetMapping("/raquib")
 
     public String raquib() {
-        return "raquib";
+        return "/raq/raquib";
     }
 }

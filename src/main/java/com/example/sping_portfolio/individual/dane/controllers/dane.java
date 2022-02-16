@@ -14,6 +14,6 @@ public class dane {
 
     @GetMapping("/dane")
     public String dane() {
-        return "dane";
+        return "/dane/dane";
     }
 }
