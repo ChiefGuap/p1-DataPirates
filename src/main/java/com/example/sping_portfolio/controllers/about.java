@@ -17,9 +17,14 @@ public class about {
         return "search"; // returns HTML VIEW (greeting)
     }
 
+    @GetMapping("/testsearch")
+    public String testsearch() {
+        return "testsearch"; // returns HTML VIEW (greeting)
+    }
+
     @GetMapping("/billyfrq")
     public String billyfrq() {
-        return "billyfrq"; // returns HTML VIEW (greeting)
+        return "billy/billyfrq"; // returns HTML VIEW (greeting)
     }
 
     @GetMapping("/featuredmovies")

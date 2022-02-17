@@ -15,34 +15,45 @@
 
 <body><div layout:fragment="content" th:remove="tag">
     <form role="search" id="form" class="search_style">
-        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-        <button>
-            <svg viewBox="0 0 1024 1024"><path class="path1"></path></svg>
-        </button>
+        <input target="iframe_a" type="search" id="iframes" name="q" onclick="setURL('iframes')" placeholder="Search..." aria-label="Search through site content">
+        <button>Search</button>
     </form>
-    <script>
-        const f = document.getElementById('form');
-        const q = document.getElementById('query');
-        const google = 'https://www.google.com/search?q=site%3A+';
-        const site = 'movietalk.nighthawkcodingsociety.com';
+
+     <script>
+         const f = document.getElementById('form');
+         const q = document.getElementById('query');
+         const i = document.getElementById('iframes').src = url;
+         const google = 'https://www.google.com/search?q=site%3A+';
+         const site = 'movietalk.nighthawkcodingsociety.com';
+         let url = google + site + '+' + q.value;
+
+         function setURL(url){
+             document.getElementById('iframes').src = url;
+         }
+
+         function submitted(event) {
+             event.preventDefault();
+             const url = google + site + '+' + q.value;
+         }
+
+         f.addEventListener('submit', setURL, submitted);
+     </script>
 
 
-        function submitted(event) {
-            event.preventDefault();
-            const url = google + site + '+' + q.value;
-            const win = window.open(url, '_blank');
-            win.focus();
-        }
+     <!---  I have to find a way tp insert target="iframe_a" into the search bar --->
 
-        f.addEventListener('submit', submitted);
-    </script>
-
-    <!---  https://stackoverflow.com/questions/10028934/how-to-show-google-search-results-embedded-in-my-website --->
-
+    <!---https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target --->
 <br><br>
 <h3 style="color: white;">Click the file icon on the left to view FRQs</h3>
-<center><iframe frameborder="0" width="95%" height="600px" src=function onsubmit="submitted"></iframe></center>
+  <iframe id='iframe'  name="iframe_a" width="1450" height="450" frameborder="0" scrolling="yes"></iframe>
+    <p><a href="http://localhost:8088/billy" target="iframe_a">Render</a></p>
+    <input type="button" onclick="setURL('url')" />
 </div>
+
+<!---
+get element by id
+set src to the java url
+get rid of the const win = window.open(url, '_blank'); win.focus(); --->
 
 </body>
 
