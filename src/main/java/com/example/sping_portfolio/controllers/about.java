@@ -14,12 +14,17 @@ public class about {
 
     @GetMapping("/search")
     public String search() {
-        return "search"; // returns HTML VIEW (greeting)
+        return "search"; // returns HTML VIEW (main search html)
     }
 
     @GetMapping("/testsearch")
     public String testsearch() {
-        return "testsearch"; // returns HTML VIEW (greeting)
+        return "testsearch"; // returns HTML VIEW (testing search html)
+    }
+
+    @GetMapping("/searchDirections")
+    public String searchDirections() {
+        return "searchDirections"; // returns HTML VIEW (directions of search in the iframe)
     }
 
     @GetMapping("/billyfrq")

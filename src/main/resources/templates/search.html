@@ -7,36 +7,63 @@
     <link th:href="@{/styles/styles.css}" rel="stylesheet" />
 
     <style>
-        .search_style{
+        body { background-color: lightslategray ;
+
+        }
+        .bold{
+            color: green;
+            font-weight: bold;
+            font-size: larger;
+        }
+        .search{
             padding-top: 10%;
         }
+        .billy{
+            color: whitesmoke ;
+        }
     </style>
+
 </div></head>
 
 <body><div layout:fragment="content" th:remove="tag">
-    <form role="search" id="form" class="search_style">
-        <input target="iframe_a" type="search" id="iframes" name="q" onclick="setURL('iframes')" placeholder="Search..." aria-label="Search through site content">
-        <button>Search</button>
-    </form>
+
+    <!-- Search Box -->
+
+    <div class="search">
+        <p class="bold">Search Bar</p>
+        <input id="search" type="search" placeholder="Search" aria-label="Search">
+    </div>
 
      <script>
-         const f = document.getElementById('form');
-         const q = document.getElementById('query');
-         const i = document.getElementById('iframes').src = url;
+         const search = document.getElementById('search');
          const google = 'https://www.google.com/search?q=site%3A+';
-         const site = 'movietalk.nighthawkcodingsociety.com';
-         let url = google + site + '+' + q.value;
-
-         function setURL(url){
-             document.getElementById('iframes').src = url;
-         }
+         const site = 'https://movietalk.nighthawkcodingsociety.com';
 
          function submitted(event) {
-             event.preventDefault();
-             const url = google + site + '+' + q.value;
-         }
+             if (event.key === 'Enter') {
+                 // calculations to determine new window size at 66% of existing
+                 const reduction = 0.66;  // reduce by 66%
+                 const w = Math.trunc(window.innerWidth*reduction);
+                 const h = Math.trunc(window.outerHeight*reduction);
+                 const l = Math.trunc(window.top.screenX + ((window.innerWidth - w)/2));
+                 const t = Math.trunc(window.top.screenY + ((window.outerHeight - h)/2));
+                 const left = "left=" + l;
+                 const top = "top=" + t;
+                 const width = "width=" + w;
+                 const height = "height=" + h;
+                 const location = left + ", " + top + ", " + width + ", " + height
 
-         f.addEventListener('submit', setURL, submitted);
+                 // setup and display window
+                 event.preventDefault();
+                 const url = google
+                     + site
+                     + '+'
+                     + search.value;
+                 const win = window.open(url, "CompSci A Search", location);
+                 win.focus();
+             }
+         }
+         search.addEventListener('keypress', submitted);
      </script>
 
 
@@ -45,9 +72,22 @@
     <!---https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target --->
 <br><br>
 <h3 style="color: white;">Click the file icon on the left to view FRQs</h3>
-  <iframe id='iframe'  name="iframe_a" width="1450" height="450" frameborder="0" scrolling="yes"></iframe>
-    <p><a href="http://localhost:8088/billy" target="iframe_a">Render</a></p>
-    <input type="button" onclick="setURL('url')" />
+  <iframe id='iframe'  src="https://movietalk.nighthawkcodingsociety.com/searchDirections" name="iframe_a" width="1450" height="450" frameborder="0" scrolling="yes"></iframe>
+    <p class="bold" >Click on a Link Bellow :)</p>
+    <p class="bold" >Home page</p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/" target="iframe_a">home</a></p>
+    <p class="bold" >Meet The Creators!!!</p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/about" target="iframe_a">About Page</a></p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/searchDirections" target="iframe_a">Directions for this page</a></p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/billy" target="iframe_a">billy home</a></p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/sam" target="iframe_a">sam home</a></p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/raquib" target="iframe_a">raquib home</a></p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/dylan" target="iframe_a">dylan home</a></p>
+    <p class="bold" >Rating Movies Pages</p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/ar2022/admin" target="iframe_a">Ripe Tomatoes</a></p>
+    <p class="bold" >login/signup Pages</p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/searchDirections" target="iframe_a">Directions for this page</a></p>
+
 </div>
 
 <!---
