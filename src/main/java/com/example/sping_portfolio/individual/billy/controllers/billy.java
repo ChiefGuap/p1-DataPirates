@@ -16,9 +16,14 @@ public class billy {
     @Autowired
     private schedule_service db;
 
-    @GetMapping("/billy")
+    @GetMapping("billy/billy")
     public String billy() {
-        return "/billy/billy";
+        return "billy/billy"; // returns HTML VIEW (directions of search in the iframe)
+    }
+
+    @GetMapping("/billyfrq")
+    public String billyfrq() {
+        return "billy/billyfrq"; // returns HTML VIEW (greeting)
     }
 
     //database
@@ -30,6 +35,8 @@ public class billy {
 
         return "/billy/billydb";
     }
+
+
 
     @PostMapping("/billy/schedule")
     public String schedule_comit(@RequestParam("period") int period,

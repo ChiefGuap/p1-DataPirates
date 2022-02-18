@@ -27,10 +27,6 @@ public class about {
         return "searchDirections"; // returns HTML VIEW (directions of search in the iframe)
     }
 
-    @GetMapping("/billyfrq")
-    public String billyfrq() {
-        return "billy/billyfrq"; // returns HTML VIEW (greeting)
-    }
 
     @GetMapping("/featuredmovies")
     public String featuredmovies() {
