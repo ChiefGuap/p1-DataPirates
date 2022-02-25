@@ -18,7 +18,7 @@ public class raquib2 {
 
     @GetMapping("/raq2")
     public String raquib2() {
-        return "/raq/raq2";
+        return "raq/raq2";
     }
 
     @GetMapping("/raq/movies")
@@ -27,7 +27,7 @@ public class raquib2 {
 
         model.addAttribute("movie_query", list);
 
-        return "/raq/raquibdb";
+        return "raq/raquibdb";
     }
 
     @PostMapping("/raq/movies")

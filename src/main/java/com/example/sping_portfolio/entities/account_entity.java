@@ -16,7 +16,7 @@ import javax.persistence.Id;
 @Setter
 @ToString
 @Entity
-public class login_entity {
+public class account_entity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

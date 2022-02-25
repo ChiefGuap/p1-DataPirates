@@ -18,12 +18,12 @@ public class billy {
 
     @GetMapping("/billy")
     public String billy() {
-        return "/billy/billy"; // returns HTML VIEW (directions of search in the iframe)
+        return "billy/billy"; // returns HTML VIEW (directions of search in the iframe)
     }
 
     @GetMapping("/billyfrq")
     public String billyfrq() {
-        return "/billy/billyfrq"; // returns HTML VIEW (greeting)
+        return "billy/billyfrq"; // returns HTML VIEW (greeting)
     }
 
     //database
@@ -33,7 +33,7 @@ public class billy {
 
         model.addAttribute("schedule_query", list);
 
-        return "/billy/billydb";
+        return "billy/billydb";
     }
 
 
