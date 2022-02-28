@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+<head><div layout:fragment="metadata" th:remove="tag">
+    <meta charset="UTF-8">
+    <title>Search Bar</title>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+
+    <style>
+        body { background-color: lightslategray ;
+
+        }
+        .bold{
+            color: green;
+            font-weight: bold;
+            font-size: larger;
+        }
+        .search{
+            padding-top: 10%;
+        }
+        .billy{
+            color: whitesmoke ;
+        }
+    </style>
+
+</div></head>
+
+<body><div layout:fragment="content" th:remove="tag">
+
+    <!-- Search Box -->
+
+    <div class="search">
+        <p class="bold">Search Bar</p>
+        <input id="search" type="search" placeholder="Search" aria-label="Search">
+    </div>
+
+     <script>
+         const search = document.getElementById('search');
+         const google = 'https://www.google.com/search?q=site%3A+';
+         const site = 'https://movietalk.nighthawkcodingsociety.com';
+
+         function submitted(event) {
+             if (event.key === 'Enter') {
+                 // calculations to determine new window size at 66% of existing
+                 const reduction = 0.66;  // reduce by 66%
+                 const w = Math.trunc(window.innerWidth*reduction);
+                 const h = Math.trunc(window.outerHeight*reduction);
+                 const l = Math.trunc(window.top.screenX + ((window.innerWidth - w)/2));
+                 const t = Math.trunc(window.top.screenY + ((window.outerHeight - h)/2));
+                 const left = "left=" + l;
+                 const top = "top=" + t;
+                 const width = "width=" + w;
+                 const height = "height=" + h;
+                 const location = left + ", " + top + ", " + width + ", " + height
+
+                 // setup and display window
+                 event.preventDefault();
+                 const url = google
+                     + site
+                     + '+'
+                     + search.value;
+                 const win = window.open(url, "CompSci A Search", location);
+                 win.focus();
+             }
+         }
+         search.addEventListener('keypress', submitted);
+     </script>
+
+
+     <!---  I have to find a way tp insert target="iframe_a" into the search bar --->
+
+    <!---https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target --->
+<br><br>
+<h3 style="color: white;">Click the file icon on the left to view FRQs</h3>
+  <iframe id='iframe'  src="https://movietalk.nighthawkcodingsociety.com/searchDirections" name="iframe_a" width="1450" height="450" frameborder="0" scrolling="yes"></iframe>
+    <p class="bold" >Click on a Link Bellow :)</p>
+    <p class="bold" >Home page</p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/" target="iframe_a">home</a></p>
+    <p class="bold" >Meet The Creators!!!</p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/about" target="iframe_a">About Page</a></p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/searchDirections" target="iframe_a">Directions for this page</a></p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/billy" target="iframe_a">billy home</a></p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/sam" target="iframe_a">sam home</a></p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/raquib" target="iframe_a">raquib home</a></p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/dylan" target="iframe_a">dylan home</a></p>
+    <p class="bold" >Rating Movies Pages</p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/ar2022/admin" target="iframe_a">Ripe Tomatoes</a></p>
+    <p class="bold" >login/signup Pages</p>
+    <p><a class="billy" href="https://movietalk.nighthawkcodingsociety.com/searchDirections" target="iframe_a">Directions for this page</a></p>
+
+</div>
+
+<!---
+get element by id
+set src to the java url
+get rid of the const win = window.open(url, '_blank'); win.focus(); --->
+
+</body>
+
+</html>
+
+<!---
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script language="javascript" type="text/javascript">
+function showDiv(){
+document.getElementById('popDiv').style.display='block';
+document.getElementById('popIframe').style.display='block';
+document.getElementById('bg').style.display='block';
+document.getElementById('popIframe').src='b.html';
+}
+</script>
+</head>
+<body>
+<div id="popDiv" class="mydiv" style="display:none;">This is a test
+<div id="bg" class="bg" style="display:none;"></div>
+<a href="javascript:showDiv()">Click here</a>
+<iframe id='popIframe' class='popIframe' frameborder='0' ></iframe>
+</body>
+</html>
+--->

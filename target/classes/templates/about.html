@@ -10,17 +10,22 @@
   <title>About Us</title>
   <link th:href="@{/styles/styles.css}" rel="stylesheet" />
   <link th:href="@{/styles/about.css}" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/ecb5994ee2.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7f43a63809.js" crossorigin="anonymous"></script>
 </div>
 </head>
 
 <body class="about-bg"><div layout:fragment="content" th:remove="tag">
   <h1 class="about-header">About Us</h1>
+  <h3 class="about-body">P1 Data Pirates</h3>
 
   <div class="row justify-content-center">
     <div class="column">
-      <img th:src="@{/images/raq.png}" width="50" height="50" class="face" alt="img">
-      <p class="face-name">Raq Alam</p>
+      <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+      <div class="figure">
+        <img class="Sirv image-main face" th:data-src="@{/images/raq.png}">
+        <img class="Sirv image-hover face" th:data-src="@{/images/raq2.jpg}">
+      </div>
+      <a href="/raquib"><p class="face-name">Raq Alam</p></a>
       <p class="face-text">Scrum Leader</p>
       <!-- <dl>
         <dt>TBD</dt>
@@ -28,11 +33,16 @@
       </dl> -->
       <center><a href="https://github.com/ChiefGuap" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fab fa-github fa-2x"></i></a>
       <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit?usp=sharing" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fas fa-book fa-2x"></i></a></center>
+      <!-- <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit#bookmark=id.vfw5ql5wcgle" style="text-decoration: none; color: black;" target="_blank"><i class="about-icons fa-solid fa-code fa-2x"></i></a> -->
 
     </div>
     <div class="column">
-      <img th:src="@{/images/billy.png}" width="50" height="50" class="face" alt="img">
-      <p class="face-name">Billy Cherres</p>
+      <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+      <div class="figure">
+        <img class="Sirv image-main face" th:data-src="@{/images/billy.png}">
+        <img class="Sirv image-hover face" th:data-src="@{/images/billy2.jpg}">
+      </div>
+      <a href="/billy"><p class="face-name">Billy Cherres</p></a>
       <p class="face-text">Deployment Manager</p>
       <!-- <dl>
         <dt>TBD</dt>
@@ -40,38 +50,59 @@
       </dl> -->
       <center><a href="https://github.com/BillyCherres" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fab fa-github fa-2x"></i></a>
       <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit?usp=sharing" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fas fa-book fa-2x"></i></a></center>
+      <!-- <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit#bookmark=id.vfw5ql5wcgle" style="text-decoration: none; color: black;" target="_blank"><i class="about-icons fa-solid fa-code fa-2x"></i></a> -->
     </div>
     <div class="column">
-      <img th:src="@{/images/dylan.jpg}" width="50" height="50" class="face" alt="img">
-      <p class="face-name">Dylan Roman</p>
+      <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+      <div class="figure">
+        <img class="Sirv image-main face" th:data-src="@{/images/dylan.jpg}">
+        <img class="Sirv image-hover face" th:data-src="@{/images/dylan2.png}">
+      </div>
+      <a href="/dylan"><p class="face-name">Dylan Roman</p></a>
       <p class="face-text">Technical Officer</p>
       <!-- <dl>
         <dt>TBD</dt>
         <dd>Desc. soon</dd>
       </dl> -->
       <center><a href="https://github.com/dylanroman" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fab fa-github fa-2x"></i></a>
-      <a href="https://docs.google.com/document/d/1tSdTbmLj6imljpYDC7OJZhwsZqx2VFLlgDK_WOr7RJA/edit?usp=sharing" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fas fa-book fa-2x"></i></a></center>    </div>
+      <a href="https://docs.google.com/document/d/1tSdTbmLj6imljpYDC7OJZhwsZqx2VFLlgDK_WOr7RJA/edit?usp=sharing" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fas fa-book fa-2x"></i></a></center>
+      <!-- <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit#bookmark=id.vfw5ql5wcgle" style="text-decoration: none; color: black;" target="_blank"><i class="about-icons fa-solid fa-code fa-2x"></i></a> -->
+    </div>
     <div class="column">
-      <img th:src="@{/images/sam.jpg}" width="50" height="50" class="face" alt="img">
-      <p class="face-name">Sam Koenig</p>
+      <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+      <div class="figure">
+        <img class="Sirv image-main face" th:data-src="@{/images/sam.jpg}">
+        <img class="Sirv image-hover face" th:data-src="@{/images/sam2.png}">
+      </div>
+      <a href="/sam"><p class="face-name">Sam Koenig</p></a>
       <p class="face-text">Web Designer</p>
       <!-- <dl>
         <dt>TBD</dt>
         <dd>Desc. soon</dd>
       </dl> -->
       <center><a href="https://github.com/samkoenig9" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fab fa-github fa-2x"></i></a>
-        <a href="https://docs.google.com/document/d/1tSdTbmLj6imljpYDC7OJZhwsZqx2VFLlgDK_WOr7RJA/edit?usp=sharing" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fas fa-book fa-2x"></i></a></center>    </div>
+      <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit?usp=sharing" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fas fa-book fa-2x"></i></a></center>
+      <!-- <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit#bookmark=id.vfw5ql5wcgle" style="text-decoration: none; color: black;" target="_blank"><i class="about-icons fa-solid fa-code fa-2x"></i></a> -->
+    </div>
     <div class="column">
-        <img th:src="@{/images/devam.jpg}" width="50" height="50" class="face" alt="img">
-        <p class="face-name">Devam Shrivastava</p>
-        <p class="face-text">GitHub Manager</p>
-        <!-- <dl>
-          <dt>TBD</dt>
-          <dd>Desc. soon</dd>
-        </dl> -->
-        <center><a href="https://github.com/devamshri" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fab fa-github fa-2x"></i></a>
-          <a href="https://docs.google.com/document/d/1tSdTbmLj6imljpYDC7OJZhwsZqx2VFLlgDK_WOr7RJA/edit?usp=sharing" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fas fa-book fa-2x"></i></a></center>      </div>
+      <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+      <div class="figure">
+        <img class="Sirv image-main face" th:data-src="@{/images/dane1.jpg}">
+        <img class="Sirv image-hover face" th:data-src="@{/images/dane2.jpeg}">
+      </div>
+      <a href="/dane"><p class="face-name">Dane Vestal</p></a>
+      <p class="face-text">GitHub Admin</p>
+      <!-- <dl>
+        <dt>TBD</dt>
+        <dd>Desc. soon</dd>
+      </dl> -->
+      <center><a href="https://github.com/D1935827V" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fab fa-github fa-2x"></i></a>
+      <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit?usp=sharing" style="text-decoration: none; color:black;" target="_blank"><i class="about-icons fas fa-book fa-2x"></i></a></center>
+      <!-- <a href="https://docs.google.com/document/d/1mcRnMQT0GDW596qT5bl8U42L6-XRTjykO_ndIaXuAvc/edit#bookmark=id.vfw5ql5wcgle" style="text-decoration: none; color: black;" target="_blank"><i class="about-icons fa-solid fa-code fa-2x"></i></a> -->
+
+    </div>
   </div>
 </div>
+
 </body>
 </html>

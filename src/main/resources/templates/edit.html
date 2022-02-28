@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title edit></title>
+</head>
+<body><div layout:fragment="content" th:remove="tag">
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Length</th>
+            <th>Rank</th>
+        </tr>
+        <tr th:each="category: ${movies}">
+            <td th:text="${category.id}"></td>
+            <td th:text="${category.name}"></td>
+            <td th:text="${category.genre}"></td>
+            <td th:text="${category.length}"></td>
+            <td th:text="${category.rank}"></td>
+        </tr>
+    </table>
+
+    <form method="POST">
+        <label for="function">Edit/Delete</label>
+        <select id="function" name="function">
+            <option value="0">Edit</option>
+            <option value="1">Delete</option>
+        </select>
+        <label for="id">Id: </label>
+        <input type="text" id="id" name="id">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name">
+        <label for="genre">Genre: </label>
+        <input type="text" id="genre" name="genre">
+        <label for="length">Length: </label>
+        <input type="text" id="length" name="length">
+        <label for="rank">Rank: </label>
+        <input type="text" id="rank" name="rank">
+        <input type="submit" value="Submit">
+    </form>
+
+</div></body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${media}"></title>
+</head>
+<body><div layout:fragment="content" th:remove="tag">
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Length</th>
+            <th>Rank</th>
+        </tr>
+        <tr th:each="category: ${query}">
+            <td th:text="${category.name}"></td>
+            <td th:text="${category.genre}"></td>
+            <td th:text="${category.length}"></td>
+            <td th:text="${category.rank}"></td>
+        </tr>
+    </table>
+
+    <form method="POST">
+        <label for="genre">Genre: </label>
+        <input type="text" id="genre" name="genre">
+        <input type="submit" value="Submit">
+    </form>
+
+</div></body>
+</html>

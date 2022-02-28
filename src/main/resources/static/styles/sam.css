@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(40, 41, 54);
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: rgb(40, 54, 255);
+}
+
+.header {
+    padding-top: 80px;
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: center;
+    display: flex;
+    color: white
+}
+
+.header-text {
+    text-align: left;
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 70px;
+}
+
+.face {
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+.button {
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid rgb(40, 54, 255);
+    margin-top: 20px;
+    transition: .15s;
+    border-radius: 0%;
+}
+
+.button:hover {
+    border: 4px solid rgb(40, 54, 255);
+    background-color: rgba(21, 27, 122, 0.342);
+    color: white;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(.95);
+}
+
+.links{
+    margin-top: 30px;
+}
+
+.about-icons {
+    padding: 10px;
+    transition: .15s;
+    text-align: center;
+    color: rgb(40, 54, 255)
+  }
+  
+  .about-icons:hover {
+    transform: translateY(-5px);
+    color: rgb(255, 255, 255);
+  }
+
+  .about-icons:active {
+      transform: translateY(8px) scale(.85);
+  }
+
+
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}

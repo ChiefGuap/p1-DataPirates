@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <div >
+    <meta>
+    <title>Search Bar</title>
+
+        <script src="script.js" defer> </script>
+</div>
+</head>
+
+<body>
+<body><div layout:fragment="content" th:remove="tag">
+    <form role="search" id="form" class="search_style">
+        <input target="iframe_a" type="search" id="iframes" name="q" onclick="setURL('iframes')" placeholder="Search..." aria-label="Search through site content">
+        <button>Search</button>
+    </form>
+
+    <!---  I have to find a way tp insert target="iframe_a" into the search bar --->
+
+    <!---https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target --->
+    <br><br>
+    <h3 style="color: white;">Click the file icon on the left to view FRQs</h3>
+    <iframe id='iframe'  name="iframe_a" width="1450" height="450" frameborder="0" scrolling="yes"></iframe>
+    <p><a href="http://localhost:8088/billy" target="iframe_a">Render</a></p>
+    <input type="button" onclick="setURL('url')" />
+</div>
+
+</body>
+
+</html>
+

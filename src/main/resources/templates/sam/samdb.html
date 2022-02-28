@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music</title>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+</head>
+<body><div layout:fragment="content" th:remove="tag">
+
+    <h1>Query Database</h1>
+    <table>
+        <tr>
+            <th>Song</th>
+            <th>Artist</th>
+        </tr>
+        <tr th:each="music: ${music_query}">
+            <td th:text="${music.song}"></td>
+            <td th:text="${music.artist}"></td>
+        </tr>
+    </table>
+
+    <form method="POST">
+        <label for="song">Song Name: </label>
+        <input type="text" id="song" name="song">
+        <label for="artist">Artist: </label>
+        <input type="text" id="artist" name="artist">
+        <input type="submit" value="Submit">
+    </form>
+
+</div></body>
+
+</html>
