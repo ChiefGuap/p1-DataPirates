@@ -3,7 +3,7 @@
       layout:decorate="~{layout}" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title th:text="${media}"></title>
+    <title add></title>
 </head>
 <body><div layout:fragment="content" th:remove="tag">
 
@@ -14,7 +14,8 @@
             <th>Length</th>
             <th>Rank</th>
         </tr>
-        <tr th:each="category: ${query}">
+        <p>Movies</p>
+        <tr th:each="category: ${movies}">
             <td th:text="${category.name}"></td>
             <td th:text="${category.genre}"></td>
             <td th:text="${category.length}"></td>
@@ -23,8 +24,19 @@
     </table>
 
     <form method="POST">
+        <label for="media">Media</label>
+        <select id="media" name="media">
+            <option value="0">Movies</option>
+            <option value="1">Tv Shows</option>
+        </select>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name">
         <label for="genre">Genre: </label>
         <input type="text" id="genre" name="genre">
+        <label for="length">Length: </label>
+        <input type="text" id="length" name="length">
+        <label for="rank">Rank: </label>
+        <input type="text" id="rank" name="rank">
         <input type="submit" value="Submit">
     </form>
 
