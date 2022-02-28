@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Click Speed Game in HTML5</title>
+    <style type="text/css">
+        #content {
+            width: 200px;
+            border: 1px dashed #dc0000;
+            font-size: 20px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+            user-select: none;
+        }
+
+        #clickarea {
+            width: 500px;
+            height : 300px;
+            border: 2px solid #dc0000;
+            font-size: 20px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+            position: relative;
+        }
+
+        #logo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            display: block;
+            user-select: none;
+        }
+
+        #start {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            border: 0;
+            line-height: 2.5;
+            padding: 0 20px;
+            font-size: 1rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: rgba(220, 0, 0, 1);
+            background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
+
+        #start:hover {
+            background-color: rgba(255, 0, 0, 1);
+        }
+
+        #start:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+            inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+    </style>
+</head>
+<body>
+<img id="logo" src="cursor.png" />
+<div id="content">
+    Timer: <span id="timer"></span><br/>
+    Score: <span id="score"></span><br/>
+    Clicks/s: <span id="clicks"></span>
+</div>
+<div id="clickarea">
+    <button id="start">Start</button>
+</div>
+</body>
+</html>
