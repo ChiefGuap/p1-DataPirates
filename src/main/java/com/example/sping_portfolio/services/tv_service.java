@@ -1,7 +1,7 @@
 package com.example.sping_portfolio.services;
 
-import com.example.sping_portfolio.entities.account_entity;
-import com.example.sping_portfolio.repositories.account_repo;
+import com.example.sping_portfolio.entities.tv_entity;
+import com.example.sping_portfolio.repositories.tv_repo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,27 +11,31 @@ import java.util.List;
 //methods for interacting with database
 @Service
 @Transactional
-public class account_service {
+public class tv_service {
     @Autowired
-    private account_repo jpa;
+    private tv_repo jpa;
 
     //query all
-    public List<account_entity> listALl() {
+    public List<tv_entity> listALl() {
         return jpa.findAll();
     }
 
     //query based on specific id
-    public account_entity get(long id){
+    public tv_entity get(long id){
         return jpa.findById(id).get();
     }
 
     //query based on search, defined in repository
-    public List<account_entity>listLike(String term) {
-        return jpa.findByusernameContainingIgnoreCase(term);
+    public List<tv_entity>listName(String term) {
+        return jpa.findBynameContainingIgnoreCase(term);
+    }
+
+    public List<tv_entity>listGenre(String term) {
+        return jpa.findBygenreContainingIgnoreCase(term);
     }
 
     //commit to db
-    public void commit(account_entity entry) {
+    public void commit(tv_entity entry) {
         jpa.save(entry);
     }
 

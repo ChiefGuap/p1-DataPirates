@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${media}"></title>
+</head>
+<body><div layout:fragment="content" th:remove="tag">
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Length</th>
+            <th>Rank</th>
+        </tr>
+        <tr th:each="class: ${query}">
+            <td th:text="${query.name}"></td>
+            <td th:text="${query.genre}"></td>
+            <td th:text="${query.length}"></td>
+            <td th:text="${query.rank}"></td>
+        </tr>
+    </table>
+
+</div></body>
+</html>

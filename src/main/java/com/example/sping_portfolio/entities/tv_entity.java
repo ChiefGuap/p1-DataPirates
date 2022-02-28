@@ -16,12 +16,20 @@ import javax.persistence.Id;
 @Setter
 @ToString
 @Entity
-public class account_entity {
-
+public class tv_entity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String username;
-    private String password;
+    private String name;
+    private String genre;
+    private String length;
+    private int rank;
+
+    public tv_entity(String name, String genre, String length, int rank) {
+        this.name = name;
+        this.genre = genre;
+        this.length = length;
+        this.rank = rank;
+    }
 }
